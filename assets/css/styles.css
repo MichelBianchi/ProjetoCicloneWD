@@ -1,0 +1,198 @@
+/* RECURSOS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* VARIABLES */
+:root{
+    --main-color: #6e44a1;
+    --background-color: #FFFC6A;
+    --secondary-color: whitesmoke;
+    --font-size: 0.9em;
+}
+
+/* SELETOR UNIVERSAL */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-style: 16pt;
+    font-family: "Poppins";
+    background-color: var(--background-color);
+}
+
+main{
+    padding-bottom: 20px;
+}
+
+#page{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* NAV */
+nav{
+    display: block;
+    position: relative;
+    float: right;
+    right: 5%;
+    margin-top: 18%;
+
+    min-width: 100px;
+    max-width: 300px;
+    z-index: 10;
+    text-align: right;
+}
+nav {visibility: hidden;}
+figure:active nav,
+figure:focus nav {visibility: visible;}
+
+.balao{ /*icon*/
+    position: absolute;
+    display: block;
+    width: 15%;
+    right: 3%;
+    margin-top: 0;
+    height: auto;
+    padding-top: 10px;
+
+    z-index: 30;
+    cursor: pointer;
+}
+
+/* IMAGENS */
+.container{ /* principal do index */
+    display: flex;
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin-top: 25%;
+    margin-left: 8%;
+}
+
+img{ /* cada personagem */
+    display: block;
+    padding: absolute;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+figure > img{ /* apoios */
+    display: inline-flex;
+    position: relative;
+    margin: 5px;
+    width: calc(100% / 3.5);
+}
+
+/* ARTICLES */
+article{
+    display: block;
+    margin: 20px;
+}
+#about article{ /* REVER - nos creditos apenas - aumentar padding lado esquerdo (como h3)*/
+    padding-left: 5px;
+}
+
+/* TÍTULOS */
+.titleindex{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    margin: 5px 0;
+    margin-left: 50px;
+
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1.5em;
+    color: var(--main-color);
+}
+h1{
+    position: relative;
+    display: block;
+
+    padding: 30px 10px;
+    font-family: "Poppins";
+    font-size: 1.5em;
+    color: var(--main-color);
+}
+h2{
+    font-size: 1.1em;
+    font-weight: 600; /* REVER */
+    color: var(--main-color);
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--main-color);
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+/* BUTÕES */
+button{ /* FALTA ALINHAR AO CENTRO */
+    display: inline-flex;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* PARÁGRAFOS */
+p{
+    display: block;
+    font-size: var(--font-size);
+    line-height: 1.3em;
+    text-align: start;
+    padding-top: 10px;
+    color: var(--main-color);
+}
+.bold{font-weight: 600;}
+
+/* LINKS */
+a{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    font-size: var(--font-size);
+    background-color: #b1649e;
+    color: var(--secondary-color);
+    padding: 5px;
+}
+a:hover{background-color: var(--main-color);}
+
+h3 > a,
+article > a{
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--main-color);
+}
+h3 > a:hover,
+article > a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+/* FOOTER */
+footer{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    font-size: var(--font-size);
+}
+footer > a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+footer > a:hover{color:rgb(61, 9, 63);}
+
+/* MUDAR O MEDIA @*/
+/* @media screen and (min-width: 600px) { 
+} */
