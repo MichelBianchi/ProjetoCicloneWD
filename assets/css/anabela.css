@@ -1,0 +1,11 @@
+/* Alterações específicas para a págian da Anabela */
+
+/* Texto mostrar/esconder no hover */
+
+p span {
+  visibility: hidden;
+  background-color: blueviolet;
+}
+
+/* Ajuste da imagem */
+/* Ajuste dos botões */
