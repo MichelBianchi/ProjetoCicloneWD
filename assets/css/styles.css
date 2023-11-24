@@ -23,9 +23,7 @@ html, body{
     background-color: var(--background-color);
 }
 
-main{
-    padding-bottom: 20px;
-}
+main{padding-bottom: 20px;}
 
 #page{
     display: block;
@@ -138,12 +136,15 @@ h3{
 }
 
 /* BUTÕES */
-button{ /* FALTA ALINHAR AO CENTRO */
+button{
     display: inline-flex;
     border: none;
-    text-align: center;
-    justify-content: center;
     margin: 20px 0;
+}
+
+.buttons{ /* conjunto de todos os butões - CENTRAR!! */
+    width: 100%;
+    margin-left: 25%;
 }
 
 /* PARÁGRAFOS */
@@ -155,7 +156,7 @@ p{
     padding-top: 10px;
     color: var(--main-color);
 }
-.bold{font-weight: 600;}
+strong{font-weight: bold;}
 
 /* LINKS */
 a{
