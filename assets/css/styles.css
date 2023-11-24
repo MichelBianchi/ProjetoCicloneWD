@@ -54,7 +54,7 @@ figure:focus nav {visibility: visible;}
     display: block;
     width: 15%;
     right: 3%;
-    margin-top: 0;
+    margin-top: -20px;
     height: auto;
     padding-top: 10px;
 
@@ -63,7 +63,12 @@ figure:focus nav {visibility: visible;}
 }
 
 /* IMAGENS */
-.container{ /* principal do index */
+main > img:nth-child(1){ /* titulo */
+    width: 25%;
+    margin-left: 8%;
+}
+
+main > img:nth-child(2){ /* ilustraçao do index */
     display: flex;
     position: absolute;
 
@@ -71,8 +76,8 @@ figure:focus nav {visibility: visible;}
     align-items: center;
 
     width: 80%;
-    margin-top: 25%;
-    margin-left: 8%;
+    margin-top: -10px;
+    margin-left: 10%;
 }
 
 img{ /* cada personagem */
@@ -99,12 +104,11 @@ article{
 }
 
 /* TÍTULOS */
-.titleindex{
+.titleindex{ /* REVER TAMANHO PAGINA INDEX */
     position: absolute;
     display: block;
     bottom: 0;
-    margin: 5px 0;
-    margin-left: 50px;
+    margin-left: 45px;
 
     text-align: center;
     font-family: "Poppins";
@@ -141,7 +145,6 @@ button{
     border: none;
     margin: 20px 0;
 }
-
 .buttons{ /* conjunto de todos os butões - CENTRAR!! */
     width: 100%;
     margin-left: 25%;
