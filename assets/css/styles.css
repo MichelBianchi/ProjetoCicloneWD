@@ -4,7 +4,7 @@
 /* VARIABLES */
 :root {
   --main-color: #6e44a1;
-  --background-color: #fffc6a;
+  --background-color: #fecd20;
   --secondary-color: whitesmoke;
   --font-size: 0.9em;
 }
@@ -76,6 +76,8 @@ main {
     /* titulo */
     width: 25%;
     margin-left: 8%;
+    margin-top: 3%;
+    z-index: 10;
   }
 
   main > img:nth-child(2) {
@@ -88,6 +90,9 @@ main {
 
     width: 80%;
     margin-left: 10%;
+    margin-top: -35px;
+
+    z-index: 5;
   }
 
   img {
@@ -121,9 +126,8 @@ main {
     /* REVER TAMANHO PAGINA INDEX */
     position: absolute;
     display: block;
-    margin-left: 45px;
-    margin-top: 100%;
-    padding-top: 5%;
+    margin-left: 50px;
+    margin-top: 91%;
     text-align: center;
     font-family: "Poppins";
     font-size: 1.5em;
@@ -138,7 +142,7 @@ main {
   }
   h2 {
     font-size: 1.1em;
-    font-weight: 600; /* REVER */
+    font-weight: 600;
     color: var(--main-color);
     padding-top: 5px;
     text-transform: uppercase;
