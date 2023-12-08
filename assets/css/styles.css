@@ -42,21 +42,17 @@ main {
     display: block;
     position: relative;
     float: right;
-    right: 5%;
-    margin-top: 18%;
+    right: 20%;
+    margin-top: 1%;
 
     min-width: 100px;
     max-width: 300px;
     z-index: 10;
     text-align: right;
   }
-  nav {
-    visibility: hidden;
-  }
+  nav {visibility: hidden;}
   figure:active nav,
-  figure:focus nav {
-    visibility: visible;
-  }
+  figure:focus nav {visibility: visible;}
 
   .balao {
     /*icon*/
@@ -103,6 +99,32 @@ main {
     margin-top: 5%;
   }
 
+  /* titulo cada personagem */
+  #titulobernardo{
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    width: 35%;
+  }
+  #titulom{
+    position: absolute;
+    top: 15%;
+    right: 23%;
+    width: 20%;
+  }
+  #titulocarla{
+    position: absolute;
+    width: 25%;
+    right: 11%;
+    top: 12%;
+  }
+  #tituloanabela{
+    position: absolute;
+    width: 30%;
+    top: 15%;
+    right: 30%;
+  }
+
   figure > img {
     /* apoios */
     display: inline-flex;
@@ -144,8 +166,15 @@ main {
     font-size: 1.1em;
     font-weight: 600;
     color: var(--main-color);
-    padding-top: 5px;
     text-transform: uppercase;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+    opacity: 0.9;
   }
   h3 {
     font-size: 1.1em;
@@ -156,15 +185,21 @@ main {
   }
 
   /* BUTÕES */
-  button {
-    display: inline-flex;
-    border: none;
-    margin: 20px 0;
-  }
   .buttons {
-    /* conjunto de todos os butões - CENTRAR!! */
-    width: 100%;
-    margin-left: 25%;
+    width: 130px;
+    position: fixed;
+    z-index: 10;
+    top: 35%;
+    right: 0;
+    overflow-x: hidden;
+    opacity: 0.9;
+  }
+  .buttons a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 0.7em;
+    line-height: 150%;
+    display: block;
   }
 
   /* PARÁGRAFOS */
