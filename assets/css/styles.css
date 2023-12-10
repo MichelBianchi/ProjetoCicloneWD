@@ -42,8 +42,8 @@ main {
     display: block;
     position: relative;
     float: right;
-    right: 20%;
-    margin-top: 1%;
+    right: 15%;
+    margin-top: 0.8%;
 
     min-width: 100px;
     max-width: 300px;
@@ -54,14 +54,13 @@ main {
   figure:active nav,
   figure:focus nav {visibility: visible;}
 
-  .balao {
-    /*icon*/
+  .menu {
+    /*icon do menu*/
     position: absolute;
     display: block;
-    width: 15%;
+    width: 10%;
     right: 3%;
-    margin-top: -20px;
-    height: auto;
+    margin-top: -10px;
     padding-top: 10px;
     z-index: 30;
     cursor: pointer;
@@ -87,8 +86,6 @@ main {
     width: 80%;
     margin-left: 10%;
     margin-top: -35px;
-
-    z-index: 5;
   }
 
   img {
@@ -258,4 +255,31 @@ main {
 
 /* Computador */
 @media (min-width: 1020px) {
+
+/* imagens menu de cada personagem */
+  .menuanabela{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .menucarla{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  .menum{
+    position: absolute;
+    right: 15px;
+    top: 25px;
+  }
+  .menubernardo{
+    position: absolute;
+    right: 15px;
+    top: 30px;
+  }
+
+/* icon menu - É NECESSÁRIO TER????*/
+  .menu{
+    display: hidden;
+  }
 }
