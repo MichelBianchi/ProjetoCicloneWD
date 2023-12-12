@@ -18,7 +18,7 @@
 <body>
     <div id="page">
     <header>
-        <figure tabindex="-1"> <!-- para aparecer depois de largar -->
+        <figure tabindex="-1" class="nav"> <!-- para aparecer depois de largar -->
             <img class="menu" src="assets/media/graphics/iconmenu.png" alt="Icon Menu">
             <nav>
             <ul>
@@ -31,17 +31,31 @@
             </nav>
         </figure>
 
-        <!-- NAV PC -->
-        <figure>
-            <img id="menuanabela" src="assets/media/graphics/iconanabela.png" alt="Anabela" width="5%">
-            <img id="menucarla" src="assets/media/graphics/iconcarla.png" alt="Carla" width="5%">
-            <img id="menum" src="assets/media/graphics/iconm.png" alt="M." width="5%">
-            <img id="menubernardo" src="assets/media/graphics/iconbernardo.png" alt="Bernardo" width="5%">
+        <!-- versao pc-->
+        <a class="creditos" href="about.html">
+            <img class="creditosicon" src="assets/media/graphics/iconmenu1.png" alt="Icon Créditos">
+        </a>
+
+        <figure id="menupc">
+            <a href="chapters/anabela.html">
+                <img id="anabelamenu" src="assets/media/images/anabelamenu.png" alt="Anabela Menu">
+            </a>
+            <a href="chapters/carla.html">
+                <img id="carlamenu" src="assets/media/images/carlamenu.png" alt="Carla Menu">
+            </a>
+            <a href="chapters/m.html">
+                <img id="mmenu" src="assets/media/images/mmenu.png" alt="M. Menu">
+            </a>
+            <a href="chapters/bernardo.html">
+                <img id="bernardomenu" src="assets/media/images/bernardomenu.png" alt="Bernardo Menu">
+            </a>
         </figure>
+
     </header>
 
     <main>
-        <img src="assets/media/images/titulocortado.png" alt="Ciclone"> <!-- título -->
+        <img src="assets/media/images/titulocortado.png" alt="Título Ciclone"> <!-- título cortado aka versao tele -->
+        <img src="assets/media/images/titulo.png" alt="Título Ciclone"> <!-- titulo versao pc -->
         <img src="assets/media/images/ilustraçao.png" alt="Ilustração"><!-- imagem principal -->
 
         <h1 class="titleindex">Diário de Uma Montanha-Russa</h1> 

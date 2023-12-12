@@ -66,6 +66,8 @@ main {
     cursor: pointer;
   }
 
+  .creditos{display: none;} /* so necessario na versao pc */
+
   /* IMAGENS */
   main > img:nth-child(1) {
     /* titulo */
@@ -75,7 +77,9 @@ main {
     z-index: 10;
   }
 
-  main > img:nth-child(2) {
+  main > img:nth-child(2) {display: none;} /* apenas necessario em pc */
+
+  main > img:nth-child(3) {
     /* ilustraçao do index */
     display: flex;
     position: absolute;
@@ -208,9 +212,7 @@ main {
     padding-top: 10px;
     color: var(--main-color);
   }
-  strong {
-    font-weight: bold;
-  }
+  strong {font-weight: bold;}
 
   /* LINKS */
   a {
@@ -253,33 +255,55 @@ main {
   }
 }
 
-/* Computador */
+/* COMPUTADOR */
 @media (min-width: 1020px) {
 
-/* imagens menu de cada personagem */
-  .menuanabela{
-    position: absolute;
-    right: 15px;
-    top: 15px;
-  }
-  .menucarla{
-    position: absolute;
-    right: 15px;
-    top: 20px;
-  }
-  .menum{
-    position: absolute;
-    right: 15px;
-    top: 25px;
-  }
-  .menubernardo{
-    position: absolute;
-    right: 15px;
-    top: 30px;
+  /* ICONS */
+  main > img:nth-child(1),
+  main > img:nth-child(3) {
+    display: none;
   }
 
-/* icon menu - É NECESSÁRIO TER????*/
-  .menu{
-    display: hidden;
+  main > img:nth-child(2) {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .nav{display: none;} /* a nav do tele vai ser diferente à do pc*/
+
+  .creditosicon{
+    width: 5%;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+
+  /* IMAGENS */
+  #menupc{
+    position: absolute;
+    display: block;
+    justify-content: start;
+    align-items: start;
+    left: 10%;
+    top: 25%;
+  }
+
+  #anabelamenu{
+    position: absolute;
+    left: 180px;
+    top: 30px;
+  }
+  #carlamenu{
+    position: absolute;
+    left: 340px;
+  }
+  #mmenu{
+    position: absolute;
+    left: 610px;
+    top: 15px;
+  }
+  #bernardomenu{
+    position: absolute;
+    left: 820px;
   }
 }
