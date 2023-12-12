@@ -66,7 +66,15 @@ main {
     cursor: pointer;
   }
 
-  .creditos{display: none;} /* so necessario na versao pc */
+  #anabelamenu,
+  #carlamenu,
+  #bernardomenu,
+  #mmenu,
+  #menupc,
+  .creditos,
+  main > img:nth-child(2){
+    display: none;
+  } /* so necessario na versao pc */
 
   /* IMAGENS */
   main > img:nth-child(1) {
@@ -76,8 +84,6 @@ main {
     margin-top: 3%;
     z-index: 10;
   }
-
-  main > img:nth-child(2) {display: none;} /* apenas necessario em pc */
 
   main > img:nth-child(3) {
     /* ilustraçao do index */
@@ -90,6 +96,8 @@ main {
     width: 80%;
     margin-left: 10%;
     margin-top: -35px;
+
+    z-index: 1;
   }
 
   img {
@@ -260,7 +268,8 @@ main {
 
   /* ICONS */
   main > img:nth-child(1),
-  main > img:nth-child(3) {
+  main > img:nth-child(3),
+  .nav {
     display: none;
   }
 
@@ -269,14 +278,43 @@ main {
     padding: 10px;
   }
 
-  .nav{display: none;} /* a nav do tele vai ser diferente à do pc*/
-
+  /* de cada PERSONAGEM */
   .creditosicon{
     width: 5%;
     position: absolute;
     right: 15px;
     top: 10px;
   }
+  .anabelaicon{
+    position: absolute;
+    right: 20px;
+    top: 13%;
+    opacity: 0.5;
+  }
+  .carlaicon{
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    opacity: 0.5;
+  }
+  .micon{
+    position: absolute;
+    right: 25px;
+    top: 37%;
+    opacity: 0.5;
+  }
+  .bernardoicon{
+    position: absolute;
+    right: 30px;
+    top: 51%;
+    opacity: 0.5;
+  }
+
+  .anabelaicon:hover,
+  .carlaicon:hover,
+  .micon:hover,
+  .bernardoicon:hover,
+  .creditosicon{opacity: 1;}
 
   /* IMAGENS */
   #menupc{
@@ -287,7 +325,7 @@ main {
     left: 10%;
     top: 25%;
   }
-
+  /* menu inicial - index */
   #anabelamenu{
     position: absolute;
     left: 180px;
@@ -305,5 +343,41 @@ main {
   #bernardomenu{
     position: absolute;
     left: 820px;
+  }
+
+  /* titulo cada personagem REVER*/
+  #titulobernardo{
+    position: fixed;
+    width: 60%;
+  }
+  #titulom{
+    position: absolute;
+    width: 60%;
+  }
+  #titulocarla{
+    position: absolute;
+    width: 60%;
+  }
+  #tituloanabela{
+    position: absolute;
+    width: 60%;
+  }
+
+
+  /* FOOTER */
+  footer {
+    display: block;
+    padding: 15px;
+    bottom: 0;
+    font-size: var(--font-size);
+    background-color: #6e44a1;
+  }
+  footer > a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  footer:hover {
+    color: rgb(61, 9, 63);
+    background-color: #b1649e;
   }
 }
