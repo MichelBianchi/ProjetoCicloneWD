@@ -84,7 +84,6 @@ main {
     margin-top: 3%;
     z-index: 10;
   }
-
   main > img:nth-child(3) {
     /* ilustraçao do index */
     display: flex;
@@ -266,6 +265,57 @@ main {
 /* COMPUTADOR */
 @media (min-width: 1020px) {
 
+  header{
+    position: relative;
+    display: block;
+    padding: 10%;
+  }
+
+  main{
+    position: relative;
+    display: block;
+    padding: 40px;
+  }
+
+  /* TEXTOS */
+  h1 {
+    position: relative;
+    display: block;
+    font-family: "Poppins";
+    font-size: 1.5em;
+    color: var(--main-color);
+  }
+  h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+    opacity: 0.9;
+  }
+  h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--main-color);
+    padding-top: 3px;
+    padding-left: 5px;
+  }
+
+  p {
+    display: block;
+    font-size: var(--font-size);
+    line-height: 1.3em;
+    text-align: start;
+    padding-top: 10px;
+  }
+  strong {font-weight: bold;}
+
   /* ICONS */
   main > img:nth-child(1),
   main > img:nth-child(3),
@@ -284,30 +334,39 @@ main {
     position: absolute;
     right: 15px;
     top: 10px;
+    z-index: 10;
   }
   .anabelaicon{
     position: absolute;
     right: 20px;
-    top: 13%;
+    top: 20%;
     opacity: 0.5;
+    z-index: 10;
+    width: 4%;
   }
   .carlaicon{
     position: absolute;
     right: 20px;
-    top: 25%;
+    top: 35%;
     opacity: 0.5;
+    z-index: 10;
+    width: 4%;
   }
   .micon{
     position: absolute;
     right: 25px;
-    top: 37%;
+    top: 52%;
     opacity: 0.5;
+    z-index: 10;
+    width: 3%;
   }
   .bernardoicon{
     position: absolute;
-    right: 30px;
-    top: 51%;
+    right: 33px;
+    top: 71%;
     opacity: 0.5;
+    z-index: 10;
+    width: 2.3%;
   }
 
   .anabelaicon:hover,
@@ -347,22 +406,46 @@ main {
 
   /* titulo cada personagem REVER*/
   #titulobernardo{
-    position: fixed;
+    position: absolute;
     width: 60%;
   }
   #titulom{
     position: absolute;
-    width: 60%;
+    width: 30%;
   }
   #titulocarla{
     position: absolute;
-    width: 60%;
+    width: 50%;
+    top: 20px;
   }
   #tituloanabela{
     position: absolute;
-    width: 60%;
+    width: 50%;
   }
 
+  /* BUTÕES */
+  .buttons {
+    position: absolute;
+    display: block;
+    width: 200px;
+    z-index: 10;
+    top: 83%;
+    left: 30px;
+    background-color: var(--main-color);
+  }
+  .buttons a {
+    padding: 5px;
+    text-decoration: none;
+    line-height: 150%;
+    display: block;
+    color: whitesmoke;
+    font-size: var(--font-size);
+  }
+  .buttons a:hover{
+    background-color: var(--background-color);
+    color: var(--main-color);
+    font-style: italic;
+  }
 
   /* FOOTER */
   footer {
@@ -371,6 +454,8 @@ main {
     bottom: 0;
     font-size: var(--font-size);
     background-color: #6e44a1;
+    text-align: center;
+    text-transform: uppercase;
   }
   footer > a {
     color: whitesmoke;
