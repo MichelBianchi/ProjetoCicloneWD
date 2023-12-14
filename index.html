@@ -1,65 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="icon" href="assets/media/graphics/balao.png"> <!--VER-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="assets/media/graphics/balao.png" />
+    <!--VER-->
     <!-- informações para o browser -->
-    <meta name="author" content="Andreia Gomes, Inês Teixeira, Michel Bianchi, Vítor-Hugo Sousa">
-    <meta name="keywords" content="Ciclone, Diário, Montanha-Russa, Anabela, Carla, M., Bernardo, Álbum Ilustrado, Orfeão Negro, FBAUP, Web Design, Pedro Amado">
-    <meta name="description" content="Esta página é dedicada ao álbum ilustrado Ciclone - Diário de Uma Montanha-Russa - de Inês Barahona e Miguel Fragata, ilustrado por Mariana Malhão; e às suas quatro personagens principais: Anabela, Carla, M. e Bernardo.">
-    <meta name="data.created" content="2023-11-16">
+    <meta
+      name="author"
+      content="Andreia Gomes, Inês Teixeira, Michel Bianchi, Vítor-Hugo Sousa"
+    />
+    <meta
+      name="keywords"
+      content="Ciclone, Diário, Montanha-Russa, Anabela, Carla, M., Bernardo, Álbum Ilustrado, Orfeão Negro, FBAUP, Web Design, Pedro Amado"
+    />
+    <meta
+      name="description"
+      content="Esta página é dedicada ao álbum ilustrado Ciclone - Diário de Uma Montanha-Russa - de Inês Barahona e Miguel Fragata, ilustrado por Mariana Malhão; e às suas quatro personagens principais: Anabela, Carla, M. e Bernardo."
+    />
+    <meta name="data.created" content="2023-11-16" />
 
-    <link rel="stylesheet" href="assets/css/reset.css"> <!-- reset propriedades -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- reset propriedades -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Ciclone</title>
-</head>
-    
-<body>
+  </head>
+
+  <body>
     <div id="page">
-    <header>
-        <figure tabindex="-1" class="nav"> <!-- para aparecer depois de largar -->
-            <img class="menu" src="assets/media/graphics/iconmenu.png" alt="Icon Menu">
-            <nav>
+      <!-- Os conteúdos das tags header e main estão trocados!!!!! -->
+      <header>
+        <figure tabindex="-1" class="nav">
+          <!-- para aparecer depois de largar -->
+          <img
+            class="menu"
+            src="assets/media/graphics/iconmenu.png"
+            alt="Icon Menu"
+          />
+          <nav>
             <ul>
-                <li><a href="chapters/anabela.html">Anabela</a></li>
-                <li><a href="chapters/carla.html">Carla</a></li>
-                <li><a href="chapters/m.html">M.</a></li>
-                <li><a href="chapters/bernardo.html">Bernardo</a></li>
-                <li><a href="about.html">Créditos</a></li>
+              <li><a href="chapters/anabela.html">Anabela</a></li>
+              <li><a href="chapters/carla.html">Carla</a></li>
+              <li><a href="chapters/m.html">M.</a></li>
+              <li><a href="chapters/bernardo.html">Bernardo</a></li>
+              <li><a href="about.html">Créditos</a></li>
             </ul>
-            </nav>
+          </nav>
         </figure>
 
         <!-- versao pc-->
         <a class="creditos" href="about.html">
-            <img class="creditosicon" src="assets/media/graphics/iconmenu1.png" alt="Icon Créditos">
+          <img
+            class="creditosicon"
+            src="assets/media/images/creditos_letras.svg"
+            alt="Icon Créditos"
+          />
         </a>
 
-        <figure id="menupc">
-            <a href="chapters/anabela.html">
-                <img id="anabelamenu" src="assets/media/images/anabelamenu.png" alt="Anabela Menu">
-            </a>
-            <a href="chapters/carla.html">
-                <img id="carlamenu" src="assets/media/images/carlamenu.png" alt="Carla Menu">
-            </a>
-            <a href="chapters/m.html">
-                <img id="mmenu" src="assets/media/images/mmenu.png" alt="M. Menu">
-            </a>
-            <a href="chapters/bernardo.html">
-                <img id="bernardomenu" src="assets/media/images/bernardomenu.png" alt="Bernardo Menu">
-            </a>
+        <!-- Lista de personagens na landingpage versão desktop para seleção -->
+        <div class="menupc">
+          <a href="chapters/anabela.html">
+            <img
+              id="anabelamenu"
+              src="assets/media/images/anabelamenu.png"
+              alt="Anabela Menu"
+            />
+          </a>
+          <a href="chapters/carla.html">
+            <img
+              id="carlamenu"
+              src="assets/media/images/carlamenu.png"
+              alt="Carla Menu"
+            />
+          </a>
+          <a href="chapters/m.html">
+            <img id="mmenu" src="assets/media/images/mmenu.png" alt="M. Menu" />
+          </a>
+          <a href="chapters/bernardo.html">
+            <img
+              id="bernardomenu"
+              src="assets/media/images/bernardomenu.png"
+              alt="Bernardo Menu"
+            />
+          </a>
         </figure>
+      </header>
 
-    </header>
-
-    <main>
-        <img src="assets/media/images/titulocortado.png" alt="Título Ciclone"> <!-- título cortado aka versao tele -->
-        <img src="assets/media/images/titulo.png" alt="Título Ciclone"> <!-- titulo versao pc -->
-        <img src="assets/media/images/ilustraçao.png" alt="Ilustração"><!-- imagem principal -->
-
-        <h1 class="titleindex">Diário de Uma Montanha-Russa</h1> 
-    </main>
+      <main>
+        <img src="assets/media/images/titulocortado.png" alt="Título Ciclone" />
+        <!-- título cortado aka versao tele -->
+        <img src="assets/media/images/titulo.png" alt="Título Ciclone" />
+        <!-- titulo versao pc -->
+        <img
+          src="assets/media/images/ilustraçao.png"
+          alt="Ilustração"
+        /><!-- imagem principal -->
+        <h1 class="titleindex">Diário de Uma Montanha-Russa</h1>
+      </main>
     </div>
-</body>
+  </body>
 </html>

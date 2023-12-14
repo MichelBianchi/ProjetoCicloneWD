@@ -51,9 +51,13 @@ main {
     z-index: 10;
     text-align: right;
   }
-  nav {visibility: hidden;}
+  nav {
+    visibility: hidden;
+  }
   figure:active nav,
-  figure:focus nav {visibility: visible;}
+  figure:focus nav {
+    visibility: visible;
+  }
 
   .menu {
     /*icon do menu*/
@@ -73,7 +77,7 @@ main {
   #mmenu,
   #menupc,
   .creditos,
-  main > img:nth-child(2){
+  main > img:nth-child(2) {
     display: none;
   } /* so necessario na versao pc */
 
@@ -109,25 +113,25 @@ main {
   }
 
   /* titulo cada personagem */
-  #titulobernardo{
+  #titulobernardo {
     position: absolute;
     top: 17%;
     right: 15%;
     width: 35%;
   }
-  #titulom{
+  #titulom {
     position: absolute;
     top: 15%;
     right: 23%;
     width: 20%;
   }
-  #titulocarla{
+  #titulocarla {
     position: absolute;
     width: 25%;
     right: 11%;
     top: 12%;
   }
-  #tituloanabela{
+  #tituloanabela {
     position: absolute;
     width: 30%;
     top: 15%;
@@ -211,7 +215,9 @@ main {
     padding-top: 10px;
     color: var(--main-color);
   }
-  strong {font-weight: bold;}
+  strong {
+    font-weight: bold;
+  }
 
   /* LINKS */
   a {
@@ -256,22 +262,17 @@ main {
 
 /* COMPUTADOR */
 @media (min-width: 1020px) {
-  header{
+  header {
     position: relative;
     display: block;
-    padding: 10%;
   }
 
-  main{
-    position: relative;
+  main {
+    position: absolute;
     display: block;
-    width: 100%;
-  }
-
-  body{
-    position: relative;
-    display: block;
-    padding: 40px;
+    padding-left: 30px;
+    padding-top: 0px;
+    margin-bottom: 700px;
   }
 
   /* TEXTOS */
@@ -322,7 +323,9 @@ main {
     text-align: start;
     padding-top: 10px;
   }
-  strong {font-weight: bold;}
+  strong {
+    font-weight: bold;
+  }
 
   /* ICONS */
   main > img:nth-child(1),
@@ -332,21 +335,26 @@ main {
   }
 
   main > img:nth-child(2) {
-    position: absolute;
-    width: 30%;
-    padding: 10px;
-    top: 500%;
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  main h1 {
+    position: relative;
+    display: block;
+    padding-top: 5px;
   }
 
   /* de cada PERSONAGEM */
-  .creditosicon{
-    width: 5%;
+  .creditosicon {
+    width: 12%;
     position: absolute;
-    right: 0px;
-    top: 10px;
+    right: 50px;
+    top: 40px;
     z-index: 10;
   }
-  .anabelaicon{
+  .anabelaicon {
     position: absolute;
     right: 0;
     top: 20%;
@@ -354,7 +362,7 @@ main {
     z-index: 10;
     width: 4%;
   }
-  .carlaicon{
+  .carlaicon {
     position: absolute;
     right: 0;
     top: 35%;
@@ -362,7 +370,7 @@ main {
     z-index: 10;
     width: 4%;
   }
-  .micon{
+  .micon {
     position: absolute;
     right: 0;
     top: 52%;
@@ -370,7 +378,7 @@ main {
     z-index: 10;
     width: 3%;
   }
-  .bernardoicon{
+  .bernardoicon {
     position: absolute;
     right: 0;
     top: 71%;
@@ -383,52 +391,60 @@ main {
   .carlaicon:hover,
   .micon:hover,
   .bernardoicon:hover,
-  .creditosicon{opacity: 1;}
+  .creditosicon {
+    opacity: 1;
+  }
 
-  /* IMAGENS */
-  #menupc{
+  /* Posicionamento da seleção de pensonagens no index */
+  .menupc {
     position: absolute;
     display: block;
+    margin-left: 2%;
     justify-content: start;
     align-items: start;
-    left: 10%;
-    top: 25%;
   }
-  /* menu inicial - index */
-  #anabelamenu{
+  /* posição de cada personagem dentro da seleção */
+  #anabelamenu {
+    width: 500px;
     position: absolute;
-    left: 180px;
-    top: 30px;
+    top: 250px;
+    left: 10px;
   }
-  #carlamenu{
+  #carlamenu {
+    width: 350px;
+    top: 240px;
     position: absolute;
-    left: 340px;
+    left: 550px;
   }
-  #mmenu{
+  #mmenu {
+    width: 350px;
+    top: 200px;
     position: absolute;
-    left: 610px;
-    top: 15px;
+    padding-top: 0px;
+    left: 1000px;
   }
-  #bernardomenu{
+  #bernardomenu {
+    top: 300px;
+    width: 700px;
     position: absolute;
-    left: 820px;
+    left: 1200px;
   }
 
   /* titulo cada personagem REVER*/
-  #titulobernardo{
+  #titulobernardo {
     position: absolute;
     width: 60%;
   }
-  #titulom{
+  #titulom {
     position: absolute;
     width: 30%;
   }
-  #titulocarla{
+  #titulocarla {
     position: absolute;
     width: 50%;
     top: 20px;
   }
-  #tituloanabela{
+  #tituloanabela {
     position: absolute;
     width: 50%;
   }
@@ -451,7 +467,7 @@ main {
     color: var(--secondary-color);
     font-size: var(--font-size);
   }
-  .buttons a:hover{
+  .buttons a:hover {
     background-color: var(--background-color);
     color: var(--main-color);
     font-style: italic;
