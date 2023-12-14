@@ -50,9 +50,13 @@ main {
     z-index: 10;
     text-align: right;
   }
-  nav {visibility: hidden;}
+  nav {
+    visibility: hidden;
+  }
   figure:active nav,
-  figure:focus nav {visibility: visible;}
+  figure:focus nav {
+    visibility: visible;
+  }
 
   .menu {
     /*icon do menu*/
@@ -72,7 +76,7 @@ main {
   #mmenu,
   #menupc,
   .creditos,
-  main > img:nth-child(2){
+  main > img:nth-child(2) {
     display: none;
   } /* so necessario na versao pc */
 
@@ -108,25 +112,25 @@ main {
   }
 
   /* titulo cada personagem */
-  #titulobernardo{
+  #titulobernardo {
     position: absolute;
     top: 17%;
     right: 15%;
     width: 35%;
   }
-  #titulom{
+  #titulom {
     position: absolute;
     top: 15%;
     right: 23%;
     width: 20%;
   }
-  #titulocarla{
+  #titulocarla {
     position: absolute;
     width: 25%;
     right: 11%;
     top: 12%;
   }
-  #tituloanabela{
+  #tituloanabela {
     position: absolute;
     width: 30%;
     top: 15%;
@@ -219,7 +223,9 @@ main {
     padding-top: 10px;
     color: var(--main-color);
   }
-  strong {font-weight: bold;}
+  strong {
+    font-weight: bold;
+  }
 
   /* LINKS */
   a {
@@ -264,17 +270,17 @@ main {
 
 /* COMPUTADOR */
 @media (min-width: 1020px) {
-
-  header{
+  header {
     position: relative;
     display: block;
-    padding: 10%;
   }
 
-  main{
-    position: relative;
+  main {
+    position: absolute;
     display: block;
-    padding: 40px;
+    padding-left: 30px;
+    padding-top: 0px;
+    margin-bottom: 700px;
   }
 
   /* TEXTOS */
@@ -314,7 +320,9 @@ main {
     text-align: start;
     padding-top: 10px;
   }
-  strong {font-weight: bold;}
+  strong {
+    font-weight: bold;
+  }
 
   /* ICONS */
   main > img:nth-child(1),
@@ -324,19 +332,26 @@ main {
   }
 
   main > img:nth-child(2) {
-    width: 30%;
-    padding: 10px;
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  main h1 {
+    position: relative;
+    display: block;
+    padding-top: 5px;
   }
 
   /* de cada PERSONAGEM */
-  .creditosicon{
+  .creditosicon {
     width: 5%;
     position: absolute;
-    right: 15px;
-    top: 10px;
+    right: 30px;
+    top: 20px;
     z-index: 10;
   }
-  .anabelaicon{
+  .anabelaicon {
     position: absolute;
     right: 20px;
     top: 20%;
@@ -344,7 +359,7 @@ main {
     z-index: 10;
     width: 4%;
   }
-  .carlaicon{
+  .carlaicon {
     position: absolute;
     right: 20px;
     top: 35%;
@@ -352,7 +367,7 @@ main {
     z-index: 10;
     width: 4%;
   }
-  .micon{
+  .micon {
     position: absolute;
     right: 25px;
     top: 52%;
@@ -360,7 +375,7 @@ main {
     z-index: 10;
     width: 3%;
   }
-  .bernardoicon{
+  .bernardoicon {
     position: absolute;
     right: 33px;
     top: 71%;
@@ -373,52 +388,54 @@ main {
   .carlaicon:hover,
   .micon:hover,
   .bernardoicon:hover,
-  .creditosicon{opacity: 1;}
+  .creditosicon {
+    opacity: 1;
+  }
 
   /* IMAGENS */
-  #menupc{
+  #menupc {
     position: absolute;
     display: block;
+    margin-top: 200px;
+    margin-right: ;
     justify-content: start;
     align-items: start;
-    left: 10%;
-    top: 25%;
   }
   /* menu inicial - index */
-  #anabelamenu{
+  #anabelamenu {
     position: absolute;
     left: 180px;
     top: 30px;
   }
-  #carlamenu{
+  #carlamenu {
     position: absolute;
     left: 340px;
   }
-  #mmenu{
+  #mmenu {
     position: absolute;
     left: 610px;
     top: 15px;
   }
-  #bernardomenu{
+  #bernardomenu {
     position: absolute;
     left: 820px;
   }
 
   /* titulo cada personagem REVER*/
-  #titulobernardo{
+  #titulobernardo {
     position: absolute;
     width: 60%;
   }
-  #titulom{
+  #titulom {
     position: absolute;
     width: 30%;
   }
-  #titulocarla{
+  #titulocarla {
     position: absolute;
     width: 50%;
     top: 20px;
   }
-  #tituloanabela{
+  #tituloanabela {
     position: absolute;
     width: 50%;
   }
@@ -441,7 +458,7 @@ main {
     color: whitesmoke;
     font-size: var(--font-size);
   }
-  .buttons a:hover{
+  .buttons a:hover {
     background-color: var(--background-color);
     color: var(--main-color);
     font-style: italic;
