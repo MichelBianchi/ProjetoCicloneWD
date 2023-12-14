@@ -397,7 +397,7 @@ main {
     position: absolute;
     display: block;
     margin-top: 200px;
-    margin-right: ;
+    margin-left: auto;
     justify-content: start;
     align-items: start;
   }
