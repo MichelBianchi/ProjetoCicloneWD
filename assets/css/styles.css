@@ -155,10 +155,8 @@ main {
   #tituloanabela {
     position: absolute;
     width: 35%;
-    top: 13%;
+    top: 10%;
     right: 15%;
-    filter: brightness(1);
-    filter: contrast(200%);
   }
 
   /* ARTICLES */
@@ -307,7 +305,7 @@ main {
     top: 20%;
     left: 1%;
   }
-  h1{
+  h1 {
     position: relative;
     display: block;
     font-family: "Poppins";
@@ -343,9 +341,6 @@ main {
     line-height: 1.3em;
     text-align: start;
     padding-top: 10px;
-  }
-  strong {
-    font-weight: bold;
   }
 
   /* ICONS */
@@ -537,6 +532,22 @@ main {
 
   .anabelaicon {
     opacity: 100;
+  }
+
+  .headerAnabela {
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+
+  span {
+    background-color: #6c5500;
+    color: #6c5500;
+  }
+
+  span:hover {
+    opacity: 100;
+    background-color: var(--background-color);
+    transition: 0.6;
   }
 
   /* BUTÕES */
