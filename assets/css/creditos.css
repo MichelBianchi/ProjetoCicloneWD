@@ -31,95 +31,84 @@ main {
 
 /* Telemóvel */
 @media (min-width: 320px) and (max-width: 600px) {
-  body {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-
-  nav {
-    display: block;
-    position: relative;
-    float: center;
-    right: 15%;
-    margin-top: 0.8%;
-
-    min-width: 100px;
-    max-width: 300px;
-    text-align: center;
-  }
-  nav {
-    visibility: hidden;
-    height: 0;
-  }
-  figure:active nav,
-  figure:focus nav {
-    visibility: visible;
-  }
-
-  .menu {
-    /*icon do menu*/
-    width: 10%;
-    right: 3%;
-    margin-top: 10px;
-    padding-top: 10px;
-    cursor: pointer;
-  }
-
-
-
-
-
-  img {
-    /* cada personagem */
-    display: block;
-    padding: absolute;
-    margin-left: 25%;
-    margin-top: 5%;
-  }
-
-
-
-  /* ARTICLES */
-  article {
-    display: block;
-    margin: 20px;
-  }
-  #about article {
-    /* nos creditos apenas - aumentar padding lado esquerdo (como h3)*/
-    padding-left: 5px;
-  }
-
-  /* TÍTULOS */
-  h1 {
-    position: relative;
-    display: block;
-    font-family: "Poppins";
-    font-size: 1.5em;
-    color: var(--main-color);
-  }
-  h2 {
-    font-size: 1.1em;
-    font-weight: 600;
-    color: var(--main-color);
-    text-transform: uppercase;
-
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background-color: var(--background-color);
-    opacity: 0.9;
-  }
-  h3 {
-    font-size: 1.1em;
-    font-weight: 500;
-    color: var(--main-color);
-    padding-top: 3px;
-    padding-left: 5px;
-  }
+    header {
+        position: relative;
+        display: block;
+      }
+    
+      main {
+        padding-top: 10px;
+        margin-bottom: 100px;
+        text-justify: center;
+      }
+    
+      /* TEXTOS */
+      h1{
+        position: relative;
+        font-family: "Poppins";
+        font-size: 3em;
+        color: var(--main-color);
+        padding: 60px 0;
+        top: 50px;
+      }
+      h2 {
+        font-size: 1.1em;
+        font-weight: 600;
+        color: var(--main-color);
+        text-transform: uppercase;
+    
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        background-color: var(--background-color);
+        opacity: 0.9;
+      }
+      h3 {
+        font-size: 1.1em;
+        font-weight: 500;
+        color: var(--main-color);
+        padding-top: 80px;
+        padding-left: 5px;
+      }
+    
+      p {
+        font-size: var(--font-size);
+        line-height: 1.3em;
+        text-align: center;
+        padding-top: 10px;
+      }
+      strong {
+        font-weight: bold;
+      }
+    
+      /* ICONS */
+      main > img:nth-child(1),
+      main > img:nth-child(3),
+      .nav {
+        display: none;
+      }
+    
+      main > img:nth-child(2) {
+        width: 20%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+    
+      main h1 {
+        position: relative;
+        padding-top: 5px;
+      }
+    
+      /* de cada PERSONAGEM */
+      .creditosicon {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 4%;
+      }
+     
 
   /* BUTÕES */
   .buttons {
@@ -139,39 +128,23 @@ main {
     display: block;
   }
 
-  /* PARÁGRAFOS */
-  p {
-    display: block;
-    font-size: var(--font-size);
-    line-height: 1.3em;
-    text-align: start;
-    padding-top: 10px;
-    color: var(--main-color);
-  }
-  strong {
-    font-weight: bold;
-  }
+
+
 
   /* LINKS */
   a {
-    display: flex;
-    position: relative;
     text-decoration: none;
     font-size: var(--font-size);
     background-color: var(--lighter-color);
     color: var(--secondary-color);
-    padding: 5px;
+    padding: 0px;
+    text-align: center;
   }
   a:hover {
     background-color: var(--main-color);
   }
 
-  .creditosicon {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    width: 4%;
-  }
+
 
   h3 > a,
   article > a {
@@ -201,7 +174,7 @@ main {
 }
 
 /* COMPUTADOR */
-@media (min-width: 1020px) {
+@media (min-width: 601px) {
   header {
     position: relative;
     display: block;
