@@ -106,16 +106,36 @@ main {
   img {
     /* cada personagem */
     display: block;
-    padding: absolute;
+    padding: auto;
     margin-left: 25%;
     margin-top: 5%;
+  }
+
+  /* Ilustração de perfil de cada personagem */
+  .anabelaIlustracao {
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: 0;
+    top: 16px;
+  }
+
+  .headerAnabela {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .ilustracaoBernardo {
+    position: relative;
+    display: block;
+    width: 50%;
+    left: 10%;
   }
 
   /* titulo cada personagem */
   #titulobernardo {
     position: absolute;
-    top: 17%;
-    right: 15%;
+    top: 11%;
+    right: 55%;
     width: 35%;
   }
   #titulom {
@@ -132,9 +152,11 @@ main {
   }
   #tituloanabela {
     position: absolute;
-    width: 30%;
-    top: 15%;
-    right: 30%;
+    width: 35%;
+    top: 13%;
+    right: 15%;
+    filter: brightness(1);
+    filter: contrast(200%);
   }
 
   figure > img {
@@ -350,7 +372,26 @@ main {
     right: 50px;
     top: 40px;
     z-index: 10;
+    filter: brightness(50%);
   }
+
+  .creditosIconAnabela {
+    width: 12%;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    z-index: 10;
+    filter: brightness(50%);
+  }
+
+  .creditosIconAnabela:hover {
+    filter: brightness(100%);
+  }
+
+  .creditosicon:hover {
+    filter: brightness(100%);
+  }
+
   .anabelaicon {
     position: absolute;
     right: 20px;
@@ -400,31 +441,60 @@ main {
     justify-content: start;
     align-items: start;
   }
+
   /* posição de cada personagem dentro da seleção */
   #anabelamenu {
-    width: 500px;
+    width: 400px;
     position: absolute;
-    top: 250px;
+    top: 200px;
     left: 10px;
+    filter: brightness(50%); /* efeito de desfoque */
+  }
+  /*  */
+  #anabelamenu:hover {
+    filter: brightness(100%); /* efeito de foco */
   }
   #carlamenu {
-    width: 350px;
-    top: 240px;
-    position: absolute;
-    left: 550px;
-  }
-  #mmenu {
-    width: 350px;
+    width: 280px;
     top: 200px;
     position: absolute;
-    padding-top: 0px;
-    left: 1000px;
+    left: 450px;
+    filter: brightness(50%);
   }
-  #bernardomenu {
-    top: 300px;
-    width: 700px;
+  #carlamenu:hover {
+    filter: brightness(100%);
+  }
+  #mmenu {
+    width: 300px;
+    top: 140px;
     position: absolute;
-    left: 1200px;
+    padding-top: 0px;
+    left: 800px;
+    filter: brightness(50%);
+  }
+  #mmenu:hover {
+    filter: brightness(100%);
+  }
+
+  #bernardomenu {
+    top: 220px;
+    width: 350px;
+    position: absolute;
+    left: 1090px;
+    filter: brightness(50%);
+  }
+
+  #bernardomenu:hover {
+    filter: brightness(100%);
+  }
+
+  /* ajuste tamanho das ilustrações de cada personagem */
+  .anabelaIlustracao {
+    position: relative;
+    display: block;
+    padding-top: 220px;
+    padding-right: 10px;
+    width: 70%;
   }
 
   /* titulo cada personagem REVER*/
@@ -441,9 +511,31 @@ main {
     width: 50%;
     top: 20px;
   }
+
+  /* Modificaçoes no anabela.html */
+
   #tituloanabela {
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding-left: 20px;
+  }
+  .creditosIconAnabela {
+    width: 15%;
     position: absolute;
-    width: 50%;
+    left: 30px;
+    top: 40px;
+    z-index: 10;
+    filter: brightness(50%);
+  }
+
+  .creditosIconAnabela:hover {
+    filter: brightness(100%);
+  }
+
+  .anabelaicon {
+    opacity: 100;
   }
 
   /* BUTÕES */
