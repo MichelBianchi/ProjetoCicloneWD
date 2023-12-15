@@ -1,0 +1,404 @@
+/* RECURSOS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* VARIABLES */
+:root {
+  --main-color: #6e44a1;
+  --background-color: #fecd20;
+  --secondary-color: whitesmoke;
+  --font-size: 0.9em;
+}
+
+/* SELETOR UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-style: 16pt;
+  font-family: "Poppins";
+  background-color: var(--background-color);
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+/* Telemóvel */
+@media (min-width: 320px) and (max-width: 600px) {
+  body {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  nav {
+    display: block;
+    position: relative;
+    float: right;
+    right: 15%;
+    margin-top: 0.8%;
+
+    min-width: 100px;
+    max-width: 300px;
+    z-index: 10;
+    text-align: right;
+  }
+  nav {
+    visibility: hidden;
+  }
+  figure:active nav,
+  figure:focus nav {
+    visibility: visible;
+  }
+
+  .menu {
+    /*icon do menu*/
+    position: absolute;
+    display: block;
+    width: 10%;
+    right: 3%;
+    margin-top: -10px;
+    padding-top: 10px;
+    z-index: 30;
+    cursor: pointer;
+  }
+
+  #anabelamenu,
+  #carlamenu,
+  #bernardomenu,
+  #mmenu,
+  #menupc,
+  .creditos,
+  main > img:nth-child(2) {
+    display: none;
+  } /* so necessario na versao pc */
+
+  /* IMAGENS */
+  main > img:nth-child(1) {
+    /* titulo */
+    width: 25%;
+    margin-left: 8%;
+    margin-top: 3%;
+    z-index: 10;
+  }
+  main > img:nth-child(3) {
+    /* ilustraçao do index */
+    display: flex;
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -35px;
+
+    z-index: 1;
+  }
+
+  img {
+    /* cada personagem */
+    display: block;
+    padding: absolute;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+
+  /* titulo cada personagem */
+  #titulobernardo {
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    width: 35%;
+  }
+  #titulom {
+    position: absolute;
+    top: 15%;
+    right: 23%;
+    width: 20%;
+  }
+  #titulocarla {
+    position: absolute;
+    width: 25%;
+    right: 11%;
+    top: 12%;
+  }
+  #tituloanabela {
+    position: absolute;
+    width: 30%;
+    top: 15%;
+    right: 30%;
+  }
+
+  figure > img {
+    /* apoios */
+    display: inline-flex;
+    position: relative;
+    margin: 5px;
+    width: calc(100% / 3.5);
+  }
+
+  /* ARTICLES */
+  article {
+    display: block;
+    margin: 20px;
+  }
+  #about article {
+    /* REVER - nos creditos apenas - aumentar padding lado esquerdo (como h3)*/
+    padding-left: 5px;
+  }
+
+  /* TÍTULOS */
+  .titleindex {
+    /* REVER TAMANHO PAGINA INDEX */
+    position: absolute;
+    display: block;
+    margin-left: 50px;
+    margin-top: 91%;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1.5em;
+    color: var(--main-color);
+  }
+
+  h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+    opacity: 0.9;
+  }
+
+
+  /* BUTÕES */
+  .buttons {
+    top:0;
+    width: 130px;
+/*     position: block; */
+    z-index: 10;
+    right: 0;
+    overflow-x: hidden;
+    opacity: 0.9;
+    text-decoration: none;
+    font-size: 0.7em;
+    line-height: 150%;
+    display: block;
+  }
+
+
+  /* PARÁGRAFOS */
+  p {
+    display: block;
+    font-size: var(--font-size);
+    line-height: 1.3em;
+    text-align: start;
+    padding-top: 10px;
+    color: var(--main-color);
+  }
+  strong {
+    font-weight: bold;
+  }
+
+  /* LINKS */
+  a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    font-size: var(--font-size);
+    background-color: #b1649e;
+    color: var(--secondary-color);
+    padding: 5px;
+  }
+  a:hover {
+    background-color: var(--main-color);
+  }
+
+
+
+  /* FOOTER */
+  footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    font-size: var(--font-size);
+  }
+  footer > a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  footer > a:hover {
+    color: rgb(61, 9, 63);
+  }
+}
+
+/* COMPUTADOR */
+@media (min-width: 1020px) {
+  header {
+    position: relative;
+    display: block;
+  }
+
+  main {
+    position: absolute;
+    display: block;
+    padding-left: 30px;
+    padding-top: 0px;
+    margin-bottom: 700px;
+  }
+
+  /* TEXTOS */
+
+  h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+    opacity: 0.9;
+  }
+
+  p {
+    display: block;
+    font-size: var(--font-size);
+    line-height: 1.3em;
+    text-align: start;
+    padding-top: 10px;
+  }
+  strong {
+    font-weight: bold;
+  }
+
+
+  #mmm{
+    position: relative;
+    width:52%;
+    padding-left: 300px;
+  }
+
+
+  main h1 {
+    position: relative;
+    display: block;
+    padding-top: 5px;
+  }
+
+  /* de cada PERSONAGEM */
+  .creditosicon {
+    position: absolute;
+    right: 20px;
+    top: 6%;
+    width: 4%;
+    opacity: 0.5;
+  }
+  .anabelaicon {
+    position: absolute;
+    right: 20px;
+    top: 20%;
+    opacity: 0.5;
+    z-index: 10;
+    width: 4%;
+  }
+  .carlaicon {
+    position: absolute;
+    right: 20px;
+    top: 35%;
+    opacity: 0.5;
+    z-index: 10;
+    width: 4%;
+  }
+  .micon {
+    position: absolute;
+    right: 25px;
+    top: 52%;
+    opacity: 0.5;
+    z-index: 10;
+    width: 3%;
+  }
+  .bernardoicon {
+    position: absolute;
+    right: 33px;
+    top: 71%;
+    opacity: 0.5;
+    z-index: 10;
+    width: 2.3%;
+  }
+
+  .anabelaicon:hover,
+  .carlaicon:hover,
+  .micon:hover,
+  .bernardoicon:hover,
+  .creditosicon {
+    opacity: 1;
+  }
+
+
+
+  #titulom {
+    position: absolute;
+    width: 30%;
+    padding-top: 80px;
+    
+  }
+
+  /* BUTÕES */
+  .buttons {
+    position: absolute;
+    display: block;
+    width: 200px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+  }
+  .buttons a {
+    padding: 5px;
+    text-decoration: none;
+    line-height: 150%;
+    display: block;
+    color: whitesmoke;
+    font-size: var(--font-size);
+  }
+  .buttons a:hover {
+    background-color: var(--background-color);
+    color: var(--main-color);
+    font-style: italic;
+  }
+
+  /* FOOTER */
+  footer {
+    display:block;
+    padding: 15px;
+    bottom: 0;
+    font-size: var(--font-size);
+    background-color: #6e44a1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+/*   footer > a {
+    color: whitesmoke;
+    text-decoration: none;
+  } */
+  footer:hover {
+    color: rgb(61, 9, 63);
+    background-color: #b1649e;
+  }
+}

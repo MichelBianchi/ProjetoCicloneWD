@@ -6,6 +6,7 @@
   --main-color: #6e44a1;
   --background-color: #fecd20;
   --secondary-color: whitesmoke;
+  --lighter-color: #b1649e;
   --font-size: 0.9em;
 }
 
@@ -159,27 +160,18 @@ main {
     filter: contrast(200%);
   }
 
-  figure > img {
-    /* apoios */
-    display: inline-flex;
-    position: relative;
-    margin: 5px;
-    width: calc(100% / 3.5);
-  }
-
   /* ARTICLES */
   article {
     display: block;
     margin: 20px;
   }
   #about article {
-    /* REVER - nos creditos apenas - aumentar padding lado esquerdo (como h3)*/
+    /* nos creditos apenas - aumentar padding lado esquerdo (como h3)*/
     padding-left: 5px;
   }
 
   /* TÍTULOS */
   .titleindex {
-    /* REVER TAMANHO PAGINA INDEX */
     position: absolute;
     display: block;
     margin-left: 50px;
@@ -255,7 +247,7 @@ main {
     position: relative;
     text-decoration: none;
     font-size: var(--font-size);
-    background-color: #b1649e;
+    background-color: var(--lighter-color);
     color: var(--secondary-color);
     padding: 5px;
   }
@@ -286,7 +278,7 @@ main {
     text-decoration: none;
   }
   footer > a:hover {
-    color: rgb(61, 9, 63);
+    font-style: italic;
   }
 }
 
@@ -306,12 +298,23 @@ main {
   }
 
   /* TEXTOS */
-  h1 {
+  .titleindex {
     position: relative;
     display: block;
     font-family: "Poppins";
     font-size: 1.5em;
     color: var(--main-color);
+    top: 20%;
+    left: 1%;
+  }
+  h1{
+    position: relative;
+    display: block;
+    font-family: "Poppins";
+    font-size: 3em;
+    color: var(--main-color);
+    /* padding: 20px 0; */
+    top: -50px;
   }
   h2 {
     font-size: 1.1em;
@@ -394,7 +397,7 @@ main {
 
   .anabelaicon {
     position: absolute;
-    right: 20px;
+    right: 0;
     top: 20%;
     opacity: 0.5;
     z-index: 10;
@@ -402,7 +405,7 @@ main {
   }
   .carlaicon {
     position: absolute;
-    right: 20px;
+    right: 0;
     top: 35%;
     opacity: 0.5;
     z-index: 10;
@@ -410,7 +413,7 @@ main {
   }
   .micon {
     position: absolute;
-    right: 25px;
+    right: 0;
     top: 52%;
     opacity: 0.5;
     z-index: 10;
@@ -418,7 +421,7 @@ main {
   }
   .bernardoicon {
     position: absolute;
-    right: 33px;
+    right: 0;
     top: 71%;
     opacity: 0.5;
     z-index: 10;
@@ -544,16 +547,16 @@ main {
     display: block;
     width: 200px;
     z-index: 10;
-    top: 83%;
-    left: 30px;
-    background-color: var(--main-color);
+    top: -40px;
+    left: -40px;
+    background-color: var(--lighter-color);
   }
   .buttons a {
     padding: 5px;
     text-decoration: none;
     line-height: 150%;
     display: block;
-    color: whitesmoke;
+    color: var(--secondary-color);
     font-size: var(--font-size);
   }
   .buttons a:hover {
@@ -565,19 +568,19 @@ main {
   /* FOOTER */
   footer {
     display: block;
-    padding: 15px;
+    padding: 10px;
     bottom: 0;
     font-size: var(--font-size);
-    background-color: #6e44a1;
+    background-color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
   }
   footer > a {
-    color: whitesmoke;
+    color: var(--secondary-color);
     text-decoration: none;
   }
   footer:hover {
-    color: rgb(61, 9, 63);
-    background-color: #b1649e;
+    color: var(--main-color);
+    background-color: var(--lighter-color);
   }
 }
