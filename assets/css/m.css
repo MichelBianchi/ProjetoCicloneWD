@@ -6,6 +6,7 @@
   --main-color: #6e44a1;
   --background-color: #fecd20;
   --secondary-color: whitesmoke;
+  --lighter-color: #b1649e;
   --font-size: 0.9em;
 }
 
@@ -219,7 +220,7 @@ main {
     position: relative;
     text-decoration: none;
     font-size: var(--font-size);
-    background-color: #b1649e;
+    background-color: var(--lighter-color);
     color: var(--secondary-color);
     padding: 5px;
   }
@@ -241,7 +242,7 @@ main {
     text-decoration: none;
   }
   footer > a:hover {
-    color: rgb(61, 9, 63);
+    color: var(--main-color);
   }
 }
 
@@ -367,14 +368,14 @@ main {
     z-index: 10;
     top: 0;
     left: 0;
-    background-color: var(--main-color);
+    background-color: var(--lighter-color);
   }
   .buttons a {
     padding: 5px;
     text-decoration: none;
     line-height: 150%;
     display: block;
-    color: whitesmoke;
+    color: var(--secondary-color);
     font-size: var(--font-size);
   }
   .buttons a:hover {
@@ -389,7 +390,7 @@ main {
     padding: 15px;
     bottom: 0;
     font-size: var(--font-size);
-    background-color: #6e44a1;
+    background-color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
   }
@@ -398,7 +399,7 @@ main {
     text-decoration: none;
   } */
   footer:hover {
-    color: rgb(61, 9, 63);
-    background-color: #b1649e;
+    color: var(--secondary-color);
+    background-color: var(--lighter-color);
   }
 }
