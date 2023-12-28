@@ -427,43 +427,44 @@ main {
     opacity: 1;
   }
 
-  /* Posicionamento da seleção de pensonagens no index */
+  /* Não percebo pq tem um scroll lateral no index, tento inspecionar mas quando o faço os personagens saem do html */
   .menupc {
     position: absolute;
     display: block;
     margin-left: 2%;
-    justify-content: start;
-    align-items: start;
   }
 
   /* posição de cada personagem dentro da seleção */
   #anabelamenu {
-    width: 400px;
     position: absolute;
+    display: block;
+    width: 600px;
     top: 200px;
     left: 10px;
     filter: brightness(50%); /* efeito de desfoque */
   }
-  /*  */
+
   #anabelamenu:hover {
     filter: brightness(100%); /* efeito de foco */
   }
   #carlamenu {
-    width: 280px;
-    top: 200px;
     position: absolute;
-    left: 450px;
+    display: block;
+    width: 400px;
+    top: 200px;
+    left: 600px;
     filter: brightness(50%);
   }
   #carlamenu:hover {
     filter: brightness(100%);
   }
   #mmenu {
-    width: 300px;
-    top: 140px;
     position: absolute;
+    display: block;
+    width: 400px;
+    top: 140px;
+    left: 1075px;
     padding-top: 0px;
-    left: 800px;
     filter: brightness(50%);
   }
   #mmenu:hover {
@@ -471,10 +472,11 @@ main {
   }
 
   #bernardomenu {
-    top: 220px;
-    width: 350px;
     position: absolute;
-    left: 1090px;
+    display: block;
+    width: 450px;
+    top: 300px;
+    left: 1450px;
     filter: brightness(50%);
   }
 
@@ -482,39 +484,22 @@ main {
     filter: brightness(100%);
   }
 
-  /* ajuste tamanho das ilustrações de cada personagem */
-  .anabelaIlustracao {
-    position: relative;
-    display: block;
-    padding-top: 220px;
-    padding-right: 10px;
-    width: 70%;
-  }
-
-  /* titulo cada personagem REVER*/
-  #titulobernardo {
-    position: absolute;
-    width: 60%;
-  }
-  #titulom {
-    position: absolute;
-    width: 30%;
-  }
-  #titulocarla {
-    position: absolute;
-    width: 50%;
-    top: 20px;
-  }
-
   /* Modificaçoes no anabela.html */
-
   #tituloanabela {
     position: relative;
     display: block;
     width: 300px;
     margin: 0;
     top: -200px;
-    left: 800px;
+    left: 1000px;
+  }
+
+  .anabelaIlustracao {
+    position: relative;
+    display: block;
+    padding-top: 300px;
+    padding-right: 10px;
+    width: 70%;
   }
 
   .creditosIconAnabela {
@@ -539,6 +524,10 @@ main {
     margin-bottom: 30px;
   }
 
+  .menuAnabela {
+    background-color: var(--main-color);
+  }
+
   span {
     background-color: #6c5500;
     color: #6c5500;
@@ -549,18 +538,16 @@ main {
     background-color: var(--background-color);
     transition: 0.6;
   }
-
-  /* BUTÕES */
-  .buttons {
+  .buttonsAnabela {
     position: absolute;
     display: block;
     width: 200px;
     z-index: 10;
-    top: 15%;
+    top: 85%;
     left: 0;
     background-color: var(--lighter-color);
   }
-  .buttons a {
+  .buttonsAnabela a {
     padding: 5px;
     text-decoration: none;
     line-height: 150%;
@@ -568,28 +555,45 @@ main {
     color: var(--secondary-color);
     font-size: var(--font-size);
   }
-  .buttons a:hover {
+  .buttonsAnabela a:hover {
     background-color: var(--background-color);
     color: var(--main-color);
     font-style: italic;
   }
+}
 
-  /* FOOTER */
-  footer {
-    display: block;
-    padding: 10px;
-    bottom: 0;
-    font-size: var(--font-size);
-    background-color: var(--main-color);
-    text-align: center;
-    text-transform: uppercase;
-  }
-  footer > a {
-    color: var(--secondary-color);
-    text-decoration: none;
-  }
-  footer:hover {
-    color: var(--main-color);
-    background-color: var(--lighter-color);
-  }
+/* titulo cada personagem REVER*/
+#titulobernardo {
+  position: absolute;
+  width: 60%;
+}
+#titulom {
+  position: absolute;
+  width: 30%;
+}
+#titulocarla {
+  position: absolute;
+  width: 50%;
+  top: 20px;
+}
+
+/* BUTÕES */
+
+/* FOOTER */
+footer {
+  display: block;
+  padding: 10px;
+  bottom: 0;
+  font-size: var(--font-size);
+  background-color: var(--main-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+footer > a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+footer:hover {
+  color: var(--main-color);
+  background-color: var(--lighter-color);
 }
