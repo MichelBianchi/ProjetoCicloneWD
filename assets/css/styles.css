@@ -32,11 +32,13 @@ main {
 
 /* Telemóvel */
 @media (min-width: 320px) and (max-width: 600px) {
+
   body {
     display: block;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    
   }
 
   nav {
@@ -87,8 +89,9 @@ main {
     /* titulo */
     width: 25%;
     margin-left: 8%;
-    margin-top: 3%;
+    margin-top: 10%;
     z-index: 10;
+    margin-bottom: 10%;
   }
   main > img:nth-child(3) {
     /* ilustraçao do index */
@@ -100,7 +103,7 @@ main {
 
     width: 80%;
     margin-left: 10%;
-    margin-top: -35px;
+    margin-top: -50px;
 
     z-index: 1;
   }
@@ -110,7 +113,7 @@ main {
     display: block;
     padding: auto;
     margin-left: 25%;
-    margin-top: 5%;
+    margin-top: 100px;
   }
 
   /* Ilustração de perfil de cada personagem */
@@ -173,12 +176,14 @@ main {
   .titleindex {
     position: absolute;
     display: block;
-    margin-left: 50px;
+    margin: 10%;
     margin-top: 91%;
     text-align: center;
     font-family: "Poppins";
     font-size: 1.5em;
     color: var(--main-color);
+    text-justify: right;
+    text-align: right;
   }
   h1 {
     position: relative;
@@ -186,6 +191,8 @@ main {
     font-family: "Poppins";
     font-size: 1.5em;
     color: var(--main-color);
+    text-justify: center;
+   text-align: center;
   }
   h2 {
     font-size: 1.1em;
