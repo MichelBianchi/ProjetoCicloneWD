@@ -301,15 +301,7 @@ main {
   }
 
   /* TEXTOS */
-  .titleindex {
-    position: relative;
-    display: block;
-    font-family: "Poppins";
-    font-size: 1.5em;
-    color: var(--main-color);
-    top: 20%;
-    left: 1%;
-  }
+
   h1 {
     position: relative;
     display: block;
@@ -342,6 +334,7 @@ main {
 
   p {
     display: block;
+    position: relative;
     font-size: var(--font-size);
     line-height: 1.4em;
     text-align: start;
@@ -352,6 +345,17 @@ main {
 
   strong {
     font-weight: 600;
+  }
+
+  /* .tituloindex se refere ao subtitulo que aparece logo abaixo "Ciclone" no index.html */
+  .titleindex {
+    position: relative;
+    display: block;
+    font-family: "Poppins";
+    font-size: 1.5em;
+    color: var(--main-color);
+    top: 20%;
+    left: 0%;
   }
 
   /* ICONS */
@@ -397,6 +401,7 @@ main {
     filter: brightness(100%);
   }
 
+  /* menu de navegação lateral por icones de cada personagem */
   .anabelaicon {
     position: absolute;
     right: 0;
@@ -439,13 +444,8 @@ main {
   }
 
   /* Não percebo pq tem um scroll lateral no index, tento inspecionar mas quando o faço os personagens saem do html */
-  .menupc {
-    position: absolute;
-    display: block;
-    margin-left: 2%;
-  }
 
-  /* posição de cada personagem dentro da seleção */
+  /* posição de cada personagem dentro da seleção do index.html */
   #anabelamenu {
     position: absolute;
     display: block;
@@ -494,27 +494,7 @@ main {
   #bernardomenu:hover {
     filter: brightness(100%);
   }
-
-  .onzeAgosto h2 {
-  }
 }
-
-/* titulo cada personagem REVER*/
-#titulobernardo {
-  position: absolute;
-  width: 60%;
-}
-#titulom {
-  position: absolute;
-  width: 30%;
-}
-#titulocarla {
-  position: absolute;
-  width: 50%;
-  top: 20px;
-}
-
-/* BUTÕES */
 
 /* FOOTER */
 footer {
@@ -525,7 +505,7 @@ footer {
   background-color: var(--main-color);
   text-align: center;
   text-transform: uppercase;
-  margin-top: 110%;
+  margin-top: 100vh;
 }
 footer > a {
   color: var(--secondary-color);
