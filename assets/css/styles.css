@@ -527,23 +527,23 @@ main {
     color: var(--main-color);
     font-style: italic;
   }
-}
 
-/* FOOTER */
-footer {
-  position: relative;
-  display: block;
-  padding: 10px;
-  font-size: var(--font-size);
-  background-color: var(--main-color);
-  text-align: center;
-  text-transform: uppercase;
-}
-footer > a {
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-footer:hover {
-  color: var(--main-color);
-  background-color: var(--lighter-color);
+  /* FOOTER */
+  footer {
+    position: relative;
+    display: block;
+    padding: 10px;
+    font-size: var(--font-size);
+    background-color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  footer > a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  footer:hover {
+    color: var(--main-color);
+    background-color: var(--lighter-color);
+  }
 }
