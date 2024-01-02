@@ -1,33 +1,39 @@
+/* Modificações espefícificas para o personagem M */
+/* Data da última modificação: 02/01/24 */
+
 /* Telemóvel */
 @media (min-width: 320px) and (max-width: 600px) {
-  nav{
+  nav {
     height: 0%;
   }
-  
-  .menu{
+
+  .menu {
     padding-top: 20px;
     width: 50px;
   }
 
-  #ciclone{
+  #ciclone {
     background-color: var(--background-color);
     display: block;
   }
 
-  .homeM{
+  .homeM {
     margin-top: 5px;
     margin-left: 20px;
     width: 150px;
   }
 
-  .anabelaicon,.carlaicon,.bernardoicon,.micon{
+  .anabelaicon,
+  .carlaicon,
+  .bernardoicon,
+  .micon {
     width: 0%;
     height: 0%;
     padding: 0%;
     position: absolute;
   }
 
-  .buttonsm{
+  .buttonsm {
     position: fixed;
     z-index: 10;
     padding-right: 0;
@@ -39,9 +45,7 @@
     padding-top: 90px;
   }
 
-
-
-  #mmm{
+  #mmm {
     margin: 0%;
     padding-left: 40px;
     display: flex;
@@ -49,7 +53,7 @@
     padding-top: 190px;
   }
 
-  #titulom{
+  #titulom {
     margin: 0%;
     display: flex;
     width: 30%;
@@ -57,16 +61,61 @@
     padding-left: 30px;
   }
 
-  footer{
+  footer {
     margin-top: 50px;
   }
-
 }
 
 /* COMPUTADOR */
 @media (min-width: 1020px) {
-   {
-    z-index: 1;
-    disp
+  .homeM {
+    display: block;
+    position: absolute;
+    width: 200px;
+    margin-left: 30px;
+    margin-top: -40px;
+  }
+
+  .ilustracaoM {
+    display: block;
+    position: relative;
+    width: 32.5%;
+    margin-top: 5%;
+    margin-left: 300px;
+  }
+
+  .tituloM {
+    display: block;
+    position: relative;
+    width: 10%;
+    margin-left: 60%;
+    margin-top: -200px;
+  }
+
+  .anabelaicon,
+  .carlaicon,
+  .micon,
+  .bernardoicon {
+    margin-right: 80px;
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+
+  .micon {
+    opacity: 1;
+  }
+
+  main {
+    display: block;
+    position: relative;
+    margin-top: 80px;
+  }
+
+  footer {
+    margin-top: 10vh;
+  }
+
+  .buttons {
+    margin-top: 2vh;
   }
 }

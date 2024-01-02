@@ -1,3 +1,6 @@
+/* Folha de estilos universal para a o site Ciclone, baseado no livro da editora Orfeão Negro. */
+/* Autores: Andreia, Inês, Michel e Vitor */
+
 /* RECURSOS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -7,7 +10,7 @@
   --background-color: #fecd20;
   --secondary-color: whitesmoke;
   --lighter-color: #b1649e;
-  --font-size: 18px;
+  --font-size: 16px;
 }
 
 /* SELETOR UNIVERSAL */
@@ -297,7 +300,6 @@ main {
     display: block;
     padding-left: 30px;
     padding-top: 0px;
-    margin-bottom: 700px;
   }
 
   /* TEXTOS */
@@ -358,7 +360,7 @@ main {
     left: 0%;
   }
 
-  /* ICONS */
+  /* Esconder para aparecer apenas no telemovel*/
   main > img:nth-child(1),
   main > img:nth-child(3),
   .nav {
@@ -377,7 +379,6 @@ main {
     padding-top: 5px;
   }
 
-  /* de cada PERSONAGEM */
   .creditosicon {
     width: 12%;
     position: absolute;
@@ -401,7 +402,7 @@ main {
     filter: brightness(100%);
   }
 
-  /* menu de navegação lateral por icones de cada personagem */
+  /* Menu de navegação lateral universal */
   .anabelaicon {
     position: absolute;
     right: 0;
@@ -420,16 +421,16 @@ main {
   }
   .micon {
     position: absolute;
-    right: 0;
-    top: 52%;
+    right: 10px;
+    top: 50%;
     opacity: 0.5;
     z-index: 10;
     width: 3%;
   }
   .bernardoicon {
     position: absolute;
-    right: 0;
-    top: 71%;
+    right: 15px;
+    top: 67%;
     opacity: 0.5;
     z-index: 10;
     width: 2.3%;
@@ -446,11 +447,18 @@ main {
   /* Não percebo pq tem um scroll lateral no index, tento inspecionar mas quando o faço os personagens saem do html */
 
   /* posição de cada personagem dentro da seleção do index.html */
+
+  .menupc {
+    display: block;
+    position: relative;
+    margin-top: -15vh;
+  }
+
   #anabelamenu {
     position: absolute;
     display: block;
-    width: 600px;
-    top: 200px;
+    width: 400px;
+    top: 230px;
     left: 10px;
     filter: brightness(50%); /* efeito de desfoque */
   }
@@ -458,12 +466,13 @@ main {
   #anabelamenu:hover {
     filter: brightness(100%); /* efeito de foco */
   }
+
   #carlamenu {
     position: absolute;
     display: block;
-    width: 400px;
+    width: 300px;
     top: 200px;
-    left: 600px;
+    left: 430px;
     filter: brightness(50%);
   }
   #carlamenu:hover {
@@ -472,9 +481,9 @@ main {
   #mmenu {
     position: absolute;
     display: block;
-    width: 400px;
-    top: 140px;
-    left: 1075px;
+    width: 300px;
+    top: 160px;
+    left: 800px;
     padding-top: 0px;
     filter: brightness(50%);
   }
@@ -485,14 +494,38 @@ main {
   #bernardomenu {
     position: absolute;
     display: block;
-    width: 450px;
-    top: 300px;
-    left: 1450px;
+    width: 350px;
+    top: 280px;
+    left: 1050px;
     filter: brightness(50%);
   }
 
   #bernardomenu:hover {
     filter: brightness(100%);
+  }
+
+  /* estilização universal dos botões laterais de navegação por ancoragem */
+  .buttons {
+    position: absolute;
+    display: block;
+    width: 200px;
+    z-index: 10;
+    top: 83%;
+    left: 0;
+    background-color: var(--lighter-color);
+  }
+  .buttons a {
+    padding: 5px 10px;
+    text-decoration: none;
+    line-height: 150%;
+    display: block;
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+  }
+  .buttons a:hover {
+    background-color: var(--background-color);
+    color: var(--main-color);
+    font-style: italic;
   }
 }
 
@@ -505,7 +538,6 @@ footer {
   background-color: var(--main-color);
   text-align: center;
   text-transform: uppercase;
-  margin-top: 100vh;
 }
 footer > a {
   color: var(--secondary-color);

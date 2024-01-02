@@ -1,35 +1,36 @@
 /* Telemóvel */
 @media (min-width: 320px) and (max-width: 600px) {
-
-
-  nav{
+  nav {
     height: 0%;
   }
-  
-  .menu{
+
+  .menu {
     padding-top: 20px;
     width: 50px;
   }
 
-  #ciclone{
+  #ciclone {
     background-color: var(--background-color);
     display: block;
   }
 
-  .homeCarla{
+  .homeCarla {
     margin-top: 5px;
     margin-left: 20px;
     width: 150px;
   }
 
-  .anabelaicon,.carlaicon,.bernardoicon,.micon{
+  .anabelaicon,
+  .carlaicon,
+  .bernardoicon,
+  .micon {
     width: 0%;
     height: 0%;
     padding: 0%;
     position: absolute;
   }
 
-  .buttonsCarla{
+  .buttonsCarla {
     position: fixed;
     z-index: 10;
     padding-right: 0;
@@ -39,9 +40,8 @@
     display: flex;
   }
 
-
-  /* /* ilustraçao + noem da personagem */ */
-  .alinhamento{
+  /* /* ilustraçao + noem da personagem */
+  */ .alinhamento {
     display: flex;
     width: 90%;
     justify-content: center;
@@ -49,7 +49,7 @@
     margin-top: 100px;
   }
 
-  .ilustracaoCarla{
+  .ilustracaoCarla {
     margin: 0%;
     padding-left: 20px;
     display: flex;
@@ -57,7 +57,7 @@
     padding-top: 30px;
   }
 
-  .tituloCarla{
+  .tituloCarla {
     margin: 0%;
     display: flex;
     width: 50%;
@@ -65,10 +65,9 @@
     padding-top: 30%;
   }
 
-  footer{
+  footer {
     margin-top: 50px;
   }
-
 }
 /* Desktop */
 @media (min-width: 1020px) {
@@ -77,26 +76,25 @@
     display: block;
     position: absolute;
     z-index: 10;
-    width: 300px;
-    margin-top: 10px;
+    width: 250px;
+    margin-top: 80px;
     margin-left: 40px;
   }
 
   .ilustracaoCarla {
     display: block;
     position: relative;
-    width: 730px;
+    width: 35%;
     margin-left: 18%;
-    margin-top: 5.8%;
+    margin-top: 13%;
   }
 
   .tituloCarla {
     display: block;
     position: relative;
-    width: 300px;
-    margin-top: -300px;
-    margin-left: 1200px;
-    padding: 0;
+    width: 12%;
+    margin-top: -130px;
+    margin-left: 1000px;
     z-index: 10;
   }
 
@@ -104,20 +102,20 @@
   section {
     display: block;
     position: relative;
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   nav {
     display: block;
     position: relative;
-    margin-right: 50px;
-    margin-top: 0px;
+    margin-right: 80px;
+    margin-top: -80px;
   }
 
   nav > a {
     display: block;
     position: absolute;
-    padding: 500px;
+    padding: 430px;
     width: 100%;
   }
 
@@ -125,31 +123,11 @@
     opacity: 1;
   }
 
-  /* Estilização dos botões de navegação */
-  .buttonsCarla {
-    position: absolute;
-    display: block;
-    width: 200px;
-    z-index: 10;
-    margin-top: 40.6%;
-    left: 0;
-    background-color: var(--lighter-color);
-  }
-  .buttonsCarla a {
-    padding: 5px;
-    text-decoration: none;
-    line-height: 150%;
-    display: block;
-    color: var(--secondary-color);
-    font-size: var(--font-size);
-  }
-  .buttonsCarla a:hover {
-    background-color: var(--background-color);
-    color: var(--main-color);
-    font-style: italic;
+  .buttons {
+    margin-top: 90vh;
   }
 
   footer {
-    margin-top: 200vh;
+    margin-top: 250vh;
   }
 }

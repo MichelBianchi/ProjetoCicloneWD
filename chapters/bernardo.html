@@ -1,137 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="icon" href="../assets/media/graphics/balao.png"> <!--VER-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="../assets/media/graphics/balao.png" />
+    <!--VER-->
     <!-- informações para o browser -->
-    <meta name="author" content="Andreia Gomes, Inês Teixeira, Michel Bianchi, Vítor-Hugo Sousa">
-    <meta name="keywords" content="Ciclone, Diário, Montanha-Russa, Anabela, Carla, M., Bernardo, Álbum Ilustrado, Orfeão Negro, FBAUP, Web Design, Pedro Amado">
-    <meta name="description" content="Esta página é dedicada à personagem Bernardo do álbum ilustrado Ciclone - Diário de Uma Montanha-Russa - de Inês Barahona e Miguel Fragata, ilustrado por Mariana Malhão.">
-    <meta name="data.created" content="2023-11-16">
+    <meta
+      name="author"
+      content="Andreia Gomes, Inês Teixeira, Michel Bianchi, Vítor-Hugo Sousa"
+    />
+    <meta
+      name="keywords"
+      content="Ciclone, Diário, Montanha-Russa, Anabela, Carla, M., Bernardo, Álbum Ilustrado, Orfeão Negro, FBAUP, Web Design, Pedro Amado"
+    />
+    <meta
+      name="description"
+      content="Esta página é dedicada à personagem Bernardo do álbum ilustrado Ciclone - Diário de Uma Montanha-Russa - de Inês Barahona e Miguel Fragata, ilustrado por Mariana Malhão."
+    />
+    <meta name="data.created" content="2023-11-16" />
 
-    <link rel="stylesheet" href="../assets/css/reset.css"> <!-- reset propriedades -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/bernardo.css">
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <!-- reset propriedades -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/bernardo.css" />
     <title>Bernardo</title>
-</head>
-        
-<body>
-    <div id="page">
+  </head>
+
+  <body>
     <header>
-        <figure tabindex="-1" class="nav"> <!-- para aparecer depois de largar -->
-            <img class="menu" src="../assets/media/graphics/iconmenu.png" alt="Icon Menu">
-            <nav>
-            <ul>
-                <li><a href="../chapters/anabela.html">Anabela</a></li>
-                <li><a href="../chapters/carla.html">Carla</a></li>
-                <li><a href="../chapters/m.html">M.</a></li>
-                <li><a href="../chapters/bernardo.html">Bernardo</a></li>
-                <li><a href="../about.html">Créditos</a></li>
-            </ul>
-            </nav>
-        </figure>
+      <!-- Menu versão mobile -->
+      <figure tabindex="-1" class="nav">
+        <!-- para aparecer depois de largar -->
+        <img
+          class="menu"
+          src="../assets/media/graphics/iconmenu.png"
+          alt="Icon Menu"
+        />
+        <nav>
+          <ul>
+            <li><a href="../chapters/anabela.html">Anabela</a></li>
+            <li><a href="../chapters/carla.html">Carla</a></li>
+            <li><a href="../chapters/m.html">M.</a></li>
+            <li><a href="../chapters/bernardo.html">Bernardo</a></li>
+            <li><a href="../about.html">Créditos</a></li>
+          </ul>
+        </nav>
+      </figure>
 
-        <!-- versao pc para os creditos -->
-        <figure class="">
-            <a href="../index.html">
-                <img class="creditosicon" src="../assets/media/graphics/iconmenu1.png" alt="Icon Créditos">
-            </a>
-            <a href="anabela.html"> <!-- ANABELA -->
-                <img class="anabelaicon" src="../assets/media/graphics/iconanabela.png" alt="Icon Anabela">
-            </a>
-            <a href="carla.html"> <!-- CARLA -->
-                <img class="carlaicon" src="../assets/media/graphics/iconcarla.png" alt="Icon Carla">
-            </a>
-            <a href="m.html"> <!-- M -->
-                <img class="micon" src="../assets/media/graphics/iconm.png" alt="Icon M.">
-            </a>
-            <a href="bernardo.html"> <!-- BERNARDO -->
-                <img class="bernardoicon" src="../assets/media/graphics/iconbernardo.png" alt="Icon Bernardo">
-            </a>
-        </figure>
+      <!-- Botão para voltar ao index.html -->
+      <!-- Não compreendo pq que não funciona :/ -->
+      <a href="../index.html" id="ciclone">
+        <img
+          class="homeBernardo"
+          src="../assets/media/images/ciclonebernardo.png"
+          alt="Icon Créditos"
+        />
+      </a>
 
-        <img class="ilustracaoBernardo" src="../assets/media/images/bernardo.png" alt="Bernardo">
-        <img id="titulobernardo" src="../assets/media/images/titulobernardo.png" alt="Bernardo">
-        <br>
-        <div class="buttons">
-            <a href="#construction">Page Under Construction</a>
-            <a href="#blogspot">ciclone.blogspot.com</a>
-            <a href="#FAQ">FAQ</a></button>
-            <a href="#memória">Uma memória</a>
-        </div>
+      <!-- Menu versão desktop -->
+      <figure class="menuBernardo">
+        <a href="anabela.html">
+          <!-- ANABELA -->
+          <img
+            class="anabelaicon"
+            src="../assets/media/graphics/iconanabela.png"
+            alt="Icon Anabela"
+          />
+        </a>
+        <a href="carla.html">
+          <!-- CARLA -->
+          <img
+            class="carlaicon"
+            src="../assets/media/graphics/iconcarla.png"
+            alt="Icon Carla"
+          />
+        </a>
+        <a href="m.html">
+          <!-- M -->
+          <img
+            class="micon"
+            src="../assets/media/graphics/iconm.png"
+            alt="Icon M."
+          />
+        </a>
+        <a href="bernardo.html">
+          <!-- BERNARDO -->
+          <img
+            class="bernardoicon"
+            src="../assets/media/graphics/iconbernardo.png"
+            alt="Icon Bernardo"
+          />
+        </a>
+      </figure>
+
+      <img
+        class="ilustracaoBernardo"
+        src="../assets/media/images/bernardo.png"
+        alt="Bernardo"
+      />
+      <img
+        class="tituloBernardo"
+        src="../assets/media/images/titulobernardo.png"
+        alt="Bernardo"
+      />
+      <br />
+      <div class="buttons">
+        <a href="#construction">Page Under Construction</a>
+        <a href="#blogspot">ciclone.blogspot.com</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="#memória">Uma memória</a>
+      </div>
     </header>
 
     <main>
-        <section>
-            <article id="construction">
-                <h2>Page Under Construction</h2>
-                <p>Decidi criar um blogue.</p>
-                <p>Um blogue que fosse, tipo, um diário, mas aberto para o mundo inteiro. Sem aquela coisa pirosa do papel que cheira bem e da caneta especial. O digital é o autêntico: what you get is what you see. </p>
-                <p>Na verdade, nunca tive um diário. Aquela ideia de estar a escrever só para mim nunca me agradou. Acho que não tem interesse nenhum.</p>
-                <p>Um blogue é completamente diferente. Um blogue existe para dar a ver a vida de uma pessoa. E para isso só é preciso wi-fi.</p>
-                <p>Vai chamar-se ciclone ponto blogspot ponto com.</p>
-            </article>
-            <article id="blogspot">
-                <h2>ciclone.blogspot.com</h2>
-                    <p>Eu sou EU.</p>
-                    <p>Mas é preciso explicar.</p>
-                    <p>Sempre fui viciado em velocidade. Sempre quis devorar o tempo e comer o futuro. Sempre tive pressa.</p>
-                    <p>Mas isso foi antes de ter estado em Prypiat (não sei se é assim que se escreve).</p>
-                    <p>Pripyat é uma cidade inteira, em silêncio. Fica na Ucrânia, muito próxima de Chernobil. É uma cidade tipicamente soviética. Centenas de ruas de traçado geométrico, milhares de apartamentos idênticos em prédios idênticos, todos com um busto de Lenine no centro da sala de estar.</p>                        
-                    <p>É dia 27 de abril de 1986, domingo faz sol. Faltam apenas três dias para que o parque de diversões de Pripyat seja inaugurado. Vai ser no Primeiro de Maio, Dia do Trabalhador, com pompa e circunstância.</p>
-                    <p>Mas nesse domingo, ao abrir as janelas das suas casas, os habitantes de Pripyat conseguem ver claramente uma enorme coluna de fumo que sai do reator 4 da central nuclear de Chernobil. O reator está em chamas. Tudo se passa a poucos quilómetros de distância.</p>
-            </article>
-            <article id="FAQ">
-                <h2>FAQ</h2>
-                <p>A minha preferida:</p>
-                <p>Que história é essa de «exploração urbana»?</p>
-                <p>A resposta óbvia:</p>
-                <p>É andar à procura de alguma coisa em lugares abandonados.</p>
-                <p>E a pergunta seguinte:</p>
-                <p>Mas à procura de quê?</p>
-                <p>A resposta varia consoante o destinatário:</p>
-                <p>a)	Um sentido para a vida.</p>
-                <p>b)	Emoção.</p>
-                <p>c)	Adrenalina.</p>
-                <p>d)	Sei lá!</p>
-                <p>Os insistentes prosseguem:</p>
-                <p>Mas porquê lugares abandonados?</p>
-                <p>Lá desencanto uma resposta poética:</p>
-                <p>São lugares cheias de segredos.</p>
-                <p>Então ouve-se a voz da razão:</p>
-                <p>Mas isso não é invasão de propriedade alheia?</p>
-                <p>Mas eu tenho resposta pronta!</p>
-                <p>Há regras: «Não tires mais do que fotografias, não deixes mais do que pegadas.»</p>
-                <p>Segue o desmancha-prazeres…</p>
-                <p>Já pensaste nas consequências?</p>
-                <p>E outro…</p>
-                <p>Mas porque é que não paras com isso?</p>
-                <p>E outro…</p>
-                <p>Mas qual o interesse?</p>
-                <p>Eles não param, nem consigo responder…</p>
-                <p>Porque é que não fazes antes outra coisa com a tua vida?</p>
-                <p>Eu já a desesperar…</p>
-                <p>Achas que é assim que o mundo funciona?</p>
-                <p>E a machadada final:</p>
-                <p>Achas mesmo que sabes alguma coisa sobre a vida?</p>
-                <p>Até que entra na discussão a mãe, o pai, a tia, o avô, o professor, a amiga…</p>
-                <p>Onde é que estiveste ontem à noite?</p>
-                <p>Onde é que estiveste ontem à noite?</p>
-                <p>Onde é que estiveste ontem à noite?</p>
-                <p>Onde é que estiveste ontem à noite?</p>
-                <p>Onde é que estiveste ontem à noite?</p>
-                <p>Eu grito:</p>
-                <p>Fim da FAQ!</p>
-            </article>
-            <article id="memória">
-                <h2>Uma memória</h2>
-                <p>De toda a minha infância, há uma memória que guardo. A minha eterna paixão, quase obsessiva, por montanhas-russas. Sempre o vício da velocidade, da vertigem. Sempre a pressa. O limite.</p>
-                <p>Sempre achei que, se fosse uma máquina, seria uma montanha-russa.</p>
-            </article>
-        </section>
+      <section>
+        <article id="construction">
+          <h2>Page Under Construction</h2>
+          <p>Decidi criar um blogue.</p>
+          <p>
+            Um blogue que fosse, tipo, um diário, mas aberto para o mundo
+            inteiro. Sem aquela coisa pirosa do papel que cheira bem e da caneta
+            especial. O digital é o autêntico: what you get is what you see.
+          </p>
+          <p>
+            Na verdade, nunca tive um diário. Aquela ideia de estar a escrever
+            só para mim nunca me agradou. Acho que não tem interesse nenhum.
+          </p>
+          <p>
+            Um blogue é completamente diferente. Um blogue existe para dar a ver
+            a vida de uma pessoa. E para isso só é preciso wi-fi.
+          </p>
+          <p>Vai chamar-se ciclone ponto blogspot ponto com.</p>
+        </article>
+        <article id="blogspot">
+          <h2>ciclone.blogspot.com</h2>
+          <p>Eu sou EU.</p>
+          <p>Mas é preciso explicar.</p>
+          <p>
+            Sempre fui viciado em velocidade. Sempre quis devorar o tempo e
+            comer o futuro. Sempre tive pressa.
+          </p>
+          <p>
+            Mas isso foi antes de ter estado em Prypiat (não sei se é assim que
+            se escreve).
+          </p>
+          <p>
+            Pripyat é uma cidade inteira, em silêncio. Fica na Ucrânia, muito
+            próxima de Chernobil. É uma cidade tipicamente soviética. Centenas
+            de ruas de traçado geométrico, milhares de apartamentos idênticos em
+            prédios idênticos, todos com um busto de Lenine no centro da sala de
+            estar.
+          </p>
+          <p>
+            É dia 27 de abril de 1986, domingo faz sol. Faltam apenas três dias
+            para que o parque de diversões de Pripyat seja inaugurado. Vai ser
+            no Primeiro de Maio, Dia do Trabalhador, com pompa e circunstância.
+          </p>
+          <p>
+            Mas nesse domingo, ao abrir as janelas das suas casas, os habitantes
+            de Pripyat conseguem ver claramente uma enorme coluna de fumo que
+            sai do reator 4 da central nuclear de Chernobil. O reator está em
+            chamas. Tudo se passa a poucos quilómetros de distância.
+          </p>
+        </article>
+        <article id="FAQ">
+          <h2>FAQ</h2>
+          <p>A minha pergunta preferida:</p>
+          <p>Que história é essa de «exploração urbana»?</p>
+          <p>A resposta óbvia:</p>
+          <p>É andar à procura de alguma coisa em lugares abandonados.</p>
+          <p>E a pergunta seguinte:</p>
+          <p>Mas à procura de quê?</p>
+          <p>A resposta varia consoante o destinatário:</p>
+          <p>a) Um sentido para a vida.</p>
+          <p>b) Emoção.</p>
+          <p>c) Adrenalina.</p>
+          <p>d) Sei lá!</p>
+          <p>Os insistentes prosseguem:</p>
+          <p>Mas porquê lugares abandonados?</p>
+          <p>Lá desencanto uma resposta poética:</p>
+          <p>São lugares cheias de segredos.</p>
+          <p>Então ouve-se a voz da razão:</p>
+          <p>Mas isso não é invasão de propriedade alheia?</p>
+          <p>Mas eu tenho resposta pronta!</p>
+          <p>
+            Há regras: «Não tires mais do que fotografias, não deixes mais do
+            que pegadas.»
+          </p>
+          <p>Segue o desmancha-prazeres…</p>
+          <p>Já pensaste nas consequências?</p>
+          <p>E outro…</p>
+          <p>Mas porque é que não paras com isso?</p>
+          <p>E outro…</p>
+          <p>Mas qual o interesse?</p>
+          <p>Eles não param, nem consigo responder…</p>
+          <p>Porque é que não fazes antes outra coisa com a tua vida?</p>
+          <p>Eu já a desesperar…</p>
+          <p>Achas que é assim que o mundo funciona?</p>
+          <p>E a machadada final:</p>
+          <p>Achas mesmo que sabes alguma coisa sobre a vida?</p>
+          <p>
+            Até que entra na discussão a mãe, o pai, a tia, o avô, o professor,
+            a amiga…
+          </p>
+          <p>Onde é que estiveste ontem à noite?</p>
+          <p>Onde é que estiveste ontem à noite?</p>
+          <p>Onde é que estiveste ontem à noite?</p>
+          <p>Onde é que estiveste ontem à noite?</p>
+          <p>Onde é que estiveste ontem à noite?</p>
+          <p>Eu grito:</p>
+          <p>Fim da FAQ!</p>
+        </article>
+        <article id="memória">
+          <h2>Uma memória</h2>
+          <p>
+            De toda a minha infância, há uma memória que guardo. A minha eterna
+            paixão, quase obsessiva, por montanhas-russas. Sempre o vício da
+            velocidade, da vertigem. Sempre a pressa. O limite.
+          </p>
+          <p>
+            Sempre achei que, se fosse uma máquina, seria uma montanha-russa.
+          </p>
+        </article>
+      </section>
     </main>
     <footer><a href="#top">Topo</a></footer>
-    </div>
-</body>
+  </body>
 </html>

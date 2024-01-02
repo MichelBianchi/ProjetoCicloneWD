@@ -2,30 +2,31 @@
 /* Última modificação: 01/01/2024 - Feliz ano novo! */
 
 /* Telemóvel */
-@media (max-width:600px){
-
-
-  nav{
+@media (max-width: 600px) {
+  nav {
     height: 0%;
   }
 
-  .menu{
+  .menu {
     padding-top: 20px;
     width: 50px;
   }
 
-  #ciclone{
+  #ciclone {
     background-color: var(--background-color);
     display: block;
   }
 
-  .creditosIconAnabela{
+  .creditosIconAnabela {
     margin-top: 5px;
     margin-left: 20px;
     width: 150px;
   }
 
-  .anabelaicon,.carlaicon,.bernardoicon,.micon{
+  .anabelaicon,
+  .carlaicon,
+  .bernardoicon,
+  .micon {
     width: 0%;
     height: 0%;
     padding: 0%;
@@ -34,7 +35,7 @@
     background-color: var(--background-color);
   }
 
-  .buttonsAnabela{
+  .buttonsAnabela {
     position: fixed;
     z-index: 10;
     padding-right: 0;
@@ -45,7 +46,7 @@
   }
 
   /* ilustraçao + noem da personagem */
-   .alinhamento{
+  .alinhamento {
     display: flex;
     width: 90%;
     justify-content: center;
@@ -53,37 +54,37 @@
     margin-top: 70px;
   }
 
-  .anabelaIlustracao{
+  .anabelaIlustracao {
     margin: 0%;
     display: flex;
     width: 90%;
   }
 
-  #tituloanabela{
+  #tituloanabela {
     margin: 0%;
     display: flex;
     width: 40%;
     padding-top: 210px;
   }
 
-  footer{
+  footer {
     margin-top: 50px;
   }
 
-  .menuAnabela{
+  .menuAnabela {
     width: 0;
     height: 80px;
   }
-  .headerAnabela{
+  .headerAnabela {
     background-color: var(--background-color);
   }
 
   /* icons nao mostrados */
-  .icons{
+  .icons {
     background-color: var(--background-color);
   }
 
-/*   .abrir{
+  /*   .abrir{
     position: relative;
     z-index: 50;
   } */
@@ -94,18 +95,18 @@
   #tituloanabela {
     position: relative;
     display: block;
-    width: 300px;
+    width: 250px;
     margin: 0;
-    top: -200px;
-    left: 1000px;
+    top: -150px;
+    left: 700px;
   }
 
   .anabelaIlustracao {
     position: relative;
     display: block;
-    padding-top: 300px;
+    padding-top: 280px;
     padding-right: 10px;
-    width: 70%;
+    width: 65%;
   }
 
   .creditosIconAnabela {
@@ -114,24 +115,18 @@
     left: 30px;
     top: 20px;
     z-index: 10;
-    filter: brightness(50%);
-  }
-
-  .creditosIconAnabela:hover {
-    filter: brightness(100%);
   }
 
   .anabelaicon {
     opacity: 100;
   }
 
-  .headerAnabela {
-    margin-right: 40px;
-    margin-bottom: 30px;
-  }
-
   .menuAnabela {
-    background-color: var(--main-color);
+    padding: 0px;
+  }
+  .headerAnabela {
+    margin-right: 80px;
+    margin-bottom: 30px;
   }
 
   span {
@@ -144,26 +139,15 @@
     background-color: var(--background-color);
     transition: 0.6;
   }
-  .buttonsAnabela {
-    position: absolute;
-    display: block;
-    width: 200px;
-    z-index: 10;
-    top: 82.8%;
-    left: 0;
-    background-color: var(--lighter-color);
+
+  .buttons {
+    margin-top: -2vh;
   }
-  .buttonsAnabela a {
-    padding: 5px;
-    text-decoration: none;
-    line-height: 150%;
+
+  footer {
     display: block;
-    color: var(--secondary-color);
-    font-size: var(--font-size);
-  }
-  .buttonsAnabela a:hover {
-    background-color: var(--background-color);
-    color: var(--main-color);
-    font-style: italic;
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 330vh;
   }
 }

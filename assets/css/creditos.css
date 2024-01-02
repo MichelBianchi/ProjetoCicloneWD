@@ -19,7 +19,8 @@
   text-align: center;
 }
 
-html, body {
+html,
+body {
   font-style: 16pt;
   font-family: "Poppins";
   background-color: var(--background-color);
@@ -31,84 +32,89 @@ main {
 
 /* Telemóvel */
 @media (min-width: 320px) and (max-width: 600px) {
-    header {
-        position: relative;
-        display: block;
-      }
-    
-      main {
-        padding-top: 10px;
-        margin-bottom: 100px;
-        text-justify: center;
-      }
-    
-      /* TEXTOS */
-      h1{
-        position: relative;
-        font-family: "Poppins";
-        font-size: 3em;
-        color: var(--main-color);
-        padding: 60px 0;
-        top: 50px;
-      }
-      h2 {
-        font-size: 1.1em;
-        font-weight: 600;
-        color: var(--main-color);
-        text-transform: uppercase;
-    
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        padding-top: 100px;
-        padding-bottom: 30px;
-        background-color: var(--background-color);
-        opacity: 0.9;
-      }
-      h3 {
-        font-size: 1.1em;
-        font-weight: 500;
-        color: var(--main-color);
-        padding-top: 80px;
-        padding-left: 5px;
-      }
-    
-      p {
-        font-size: var(--font-size);
-        line-height: 1.3em;
-        text-align: center;
-        padding-top: 10px;
-      }
-      strong {
-        font-weight: bold;
-      }
-    
-      /* ICONS */
-      main > img:nth-child(1),
-      main > img:nth-child(3),
-      .nav {
-        display: none;
-      }
-    
-      main > img:nth-child(2) {
-        width: 20%;
-        padding-top: 20px;
-        padding-bottom: 10px;
-      }
-    
-      main h1 {
-        position: relative;
-        padding-top: 5px;
-      }
-    
-      /* de cada PERSONAGEM */
-      .creditosicon {
-        position: absolute;
-        right: 20px;
-        top: 10px;
-        width: 4%;
-      }
-     
+  header {
+    position: relative;
+    display: block;
+  }
+
+  main {
+    padding-top: 10px;
+    margin-bottom: 100px;
+    text-justify: center;
+  }
+
+  /* TEXTOS */
+  h1 {
+    position: relative;
+    font-family: "Poppins";
+    font-size: 3em;
+    color: var(--main-color);
+    padding: 60px 0;
+    top: 50px;
+  }
+  h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+    opacity: 0.9;
+  }
+  h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--main-color);
+    padding-top: 80px;
+    padding-left: 5px;
+  }
+
+  p {
+    font-size: var(--font-size);
+    line-height: 1.3em;
+    text-align: center;
+    padding-top: 10px;
+  }
+  strong {
+    font-weight: bold;
+  }
+
+  /* ICONS */
+  main > img:nth-child(1),
+  main > img:nth-child(3),
+  .nav {
+    display: none;
+  }
+
+  main > img:nth-child(2) {
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  main h1 {
+    position: relative;
+    padding-top: 5px;
+  }
+
+  /* de cada PERSONAGEM */
+  .creditosicon {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 11%;
+  }
+
+  .creditosDesktop {
+    display: block;
+    position: absolute;
+    width: 30px;
+  }
 
   /* BUTÕES */
   .buttons {
@@ -128,9 +134,6 @@ main {
     display: block;
   }
 
-
-
-
   /* LINKS */
   a {
     text-decoration: none;
@@ -143,8 +146,6 @@ main {
   a:hover {
     background-color: var(--main-color);
   }
-
-
 
   h3 > a,
   article > a {
@@ -187,7 +188,7 @@ main {
   }
 
   /* TEXTOS */
-  h1{
+  h1 {
     position: relative;
     font-family: "Poppins";
     font-size: 3em;
@@ -252,11 +253,7 @@ main {
     top: 10px;
     width: 4%;
   }
- 
 
- 
-
- 
   /* BUTÕES */
   .buttons {
     position: absolute;

@@ -1,0 +1,57 @@
+/* Modificações para o personagem Bernardo */
+/* Data da última modificação 02/01/24 */
+
+@media (max-width: 600px) {
+}
+
+@media (min-width: 1020px) {
+  .homeBernardo {
+    display: block;
+    position: relative;
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .ilustracaoBernardo {
+    display: block;
+    position: relative;
+    width: 600px;
+    margin-top: -570px;
+    margin-left: 300px;
+  }
+
+  .tituloBernardo {
+    display: block;
+    position: relative;
+    width: 300px;
+    margin-top: -200px;
+    margin-left: 980px;
+  }
+
+  main {
+    display: block;
+    position: relative;
+    margin-top: 200px;
+  }
+
+  .buttons {
+    margin-top: 5vh;
+    width: 280px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+
+  .menuBernardo {
+    position: relative;
+    margin-right: 80px;
+    margin-top: -150px;
+    padding-top: 45%;
+  }
+
+  .bernardoicon {
+    opacity: 1;
+  }
+}
