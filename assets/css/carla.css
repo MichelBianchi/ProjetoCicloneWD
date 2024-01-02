@@ -1,175 +1,77 @@
 /* Telemóvel */
 @media (min-width: 320px) and (max-width: 600px) {
-  body {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
 
-  nav {
-    display: block;
-    position: relative;
-    float: right;
-    right: 15%;
-    margin-top: 0.8%;
 
-    min-width: 100px;
-    max-width: 300px;
-    z-index: 10;
-    text-align: right;
+  nav{
+    height: 0%;
   }
-  nav {
-    visibility: hidden;
-  }
-  figure:active nav,
-  figure:focus nav {
-    visibility: visible;
-  }
-
-  .menu {
-    /*icon do menu*/
-    position: absolute;
-    display: block;
-    width: 10%;
-    right: 5%;
-    margin-top: -10px;
-    padding-top: 10px;
-    z-index: 30;
-    cursor: pointer;
-  }
-
-  #anabelamenu,
-  #carlamenu,
-  #bernardomenu,
-  #mmenu,
-  .menupc,
-  .menupc > a,
-  .creditos,
-  main > img:nth-child(2) {
-    display: none;
-  } /* so necessario na versao pc */
-
+/* 
   img {
     width: 50%;
     display: block;
     margin-left: 5%;
-    margin-top: 40px;
-  }
+  } */
 
-  #titulocarla {
-    right: 10%;
-    margin-top: 30%;
-  }
-
-  /* ARTICLES */
-  article {
-    display: block;
-    margin: 20px;
-  }
-
-  /* TÍTULOS */
-  h1 {
-    position: relative;
-    display: block;
-    font-family: "Poppins";
-    font-size: 1.5em;
-    color: var(--main-color);
-    text-justify: center;
-    text-align: center;
-  }
-  h2 {
-    font-size: 1.1em;
-    font-weight: 600;
-    color: var(--main-color);
-    text-transform: uppercase;
-
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  .menu{
     padding-top: 20px;
-    padding-bottom: 30px;
-    background-color: var(--background-color);
-    opacity: 0.9;
-  }
-  h3 {
-    font-size: 1.1em;
-    font-weight: 500;
-    color: var(--main-color);
-    padding-top: 3px;
-    padding-left: 5px;
+    width: 50px;
   }
 
-  /* BUTÕES */
-  .buttons {
-    width: 130px;
-    display: inline-block;
+  #ciclone{
+    background-color: var(--background-color);
+    display: block;
+  }
+
+  .homeCarla{
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 150px;
+  }
+
+  .anabelaicon,.carlaicon,.bernardoicon,.micon{
+    width: 0%;
+    height: 0%;
+    padding: 0%;
+    position: absolute;
+  }
+
+  .buttonsCarla{
     position: fixed;
     z-index: 10;
-    top: 30%;
-    right: 0;
-    overflow-x: hidden;
-    opacity: 0.9;
-  }
-  .buttons a {
-    padding: 5px;
-    text-decoration: none;
-    font-size: 0.7em;
-    line-height: 150%;
-    display: block;
-  }
-
-  /* PARÁGRAFOS */
-  p {
-    display: block;
-    font-size: var(--font-size);
-    line-height: 1.3em;
-    text-align: start;
-    padding-top: 10px;
-    color: var(--main-color);
-  }
-  strong {
-    font-weight: bold;
-  }
-
-  /* LINKS */
-  a {
+    padding-right: 0;
+    text-align: center;
+    align-items: end;
+    margin-top: auto;
     display: flex;
-    position: relative;
-    text-decoration: none;
-    font-size: var(--font-size);
-    background-color: var(--lighter-color);
-    color: var(--secondary-color);
-    padding: 5px;
-  }
-  a:hover {
-    background-color: var(--main-color);
   }
 
-  h3 > a,
-  article > a {
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--main-color);
-  }
-  h3 > a:hover,
-  article > a:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: black;
+  .alinhamento{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 70px;
   }
 
-  /* FOOTER */
-  footer {
-    display: block;
-    bottom: 0;
-    font-size: var(--font-size);
+  .ilustracaoCarla{
+    margin: 0%;
+    padding-left: 20px;
+    display: flex;
+    width: 50%;
   }
-  footer > a {
-    color: var(--secondary-color);
-    text-decoration: none;
+
+  .tituloCarla{
+    margin: 0%;
+    display: flex;
+    width: 50%;
+    height: 30%;
+    padding-top: 30%;
   }
-  footer > a:hover {
-    font-style: italic;
+
+  footer{
+    margin-top: 50px;
   }
+
 }
 /* Desktop */
 @media (min-width: 1020px) {

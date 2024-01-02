@@ -2,45 +2,7 @@
 /* Última modificação: 01/01/2024 - Feliz ano novo! */
 
 /* Telemóvel */
-@media (max-width: 600px) {
-  body {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
 
-  nav {
-    display: block;
-    position: relative;
-    float: right;
-    right: 15%;
-    margin-top: 0.8%;
-
-    min-width: 100px;
-    max-width: 300px;
-    z-index: 10;
-    text-align: right;
-  }
-  nav {
-    visibility: hidden;
-  }
-  figure:active nav,
-  figure:focus nav {
-    visibility: visible;
-  }
-
-  .menu {
-    /*icon do menu*/
-    position: absolute;
-    display: block;
-    width: 10%;
-    right: 5%;
-    margin-top: -10px;
-    padding-top: 10px;
-    z-index: 30;
-    cursor: pointer;
-  }
 
   #anabelamenu,
   #carlamenu,
