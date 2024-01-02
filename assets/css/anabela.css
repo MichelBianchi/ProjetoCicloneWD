@@ -3,6 +3,8 @@
 
 /* Telemóvel */
 @media (max-width:600px){
+
+
   nav{
     height: 0%;
   }
@@ -29,7 +31,7 @@
     padding: 0%;
     position: absolute;
     margin: 0%;
-    color: var(--background-color);
+    background-color: var(--background-color);
   }
 
   .buttonsAnabela{
@@ -42,6 +44,7 @@
     display: flex;
   }
 
+  /* ilustraçao + noem da personagem */
    .alinhamento{
     display: flex;
     width: 90%;
@@ -52,17 +55,15 @@
 
   .anabelaIlustracao{
     margin: 0%;
-    padding-left: -50px;
     display: flex;
-    width: 50%;
+    width: 90%;
   }
 
-  #ttituloanabela{
+  #tituloanabela{
     margin: 0%;
     display: flex;
-    width: 50%;
-    height: 30%;
-    padding-top: 100%;
+    width: 40%;
+    padding-top: 210px;
   }
 
   footer{
@@ -76,6 +77,16 @@
   .headerAnabela{
     background-color: var(--background-color);
   }
+
+  /* icons nao mostrados */
+  .icons{
+    background-color: var(--background-color);
+  }
+
+/*   .abrir{
+    position: relative;
+    z-index: 50;
+  } */
 }
 
 /* Desktop */

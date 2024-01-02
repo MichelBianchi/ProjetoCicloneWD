@@ -5,13 +5,7 @@
   nav{
     height: 0%;
   }
-/* 
-  img {
-    width: 50%;
-    display: block;
-    margin-left: 5%;
-  } */
-
+  
   .menu{
     padding-top: 20px;
     width: 50px;
@@ -45,6 +39,8 @@
     display: flex;
   }
 
+
+  /* /* ilustraçao + noem da personagem */ */
   .alinhamento{
     display: flex;
     width: 90%;
