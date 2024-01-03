@@ -13,14 +13,18 @@
   }
 
   .ciclone {
-    background-color: var(--background-color);
     display: block;
+  }
+
+  .ciclone > a{
+    background-color: var(--background-color);
   }
 
   .homeM {
     margin-top: 5px;
     margin-left: 20px;
     width: 150px;
+    z-index: 200;
   }
 
   .anabelaicon,
@@ -76,8 +80,6 @@
   footer {
     margin-top: 50px;
   }
-
-
 }
 
 /* COMPUTADOR */
