@@ -14,10 +14,15 @@
     display: block;
   }
 
+  #ciclone > a{
+    background-color: var(--background-color);
+  }
+
   .homeCarla {
     margin-top: 5px;
     margin-left: 20px;
     width: 150px;
+    z-index: 200;
   }
 
   .anabelaicon,

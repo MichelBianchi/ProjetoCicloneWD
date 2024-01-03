@@ -18,10 +18,15 @@
     display: relative;
   }
 
+  #ciclone > a{
+    background-color: var(--background-color);
+  }
+
   .creditosIconAnabela {
     margin-top: 0px;
     margin-left: 20px;
     width: 150px;
+    z-index: 200;
   }
 
   .anabelaicon,
