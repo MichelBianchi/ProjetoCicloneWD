@@ -2,7 +2,7 @@
 /* Data da última modificação: 02/01/24 */
 
 /* Telemóvel */
-@media (min-width: 320px) and (max-width: 600px) {
+@media (max-width: 600px) {
   nav {
     height: 0%;
   }
@@ -12,7 +12,7 @@
     width: 50px;
   }
 
-  #ciclone {
+  .ciclone {
     background-color: var(--background-color);
     display: block;
   }
@@ -31,39 +31,54 @@
     height: 0%;
     padding: 0%;
     position: absolute;
+    background-color: var(--background-color);
   }
 
-  .buttonsm {
+  .buttons {
     position: fixed;
     z-index: 10;
     padding-right: 0;
     text-align: center;
     align-items: end;
     margin-top: auto;
-    display: flex;
     width: 100%;
+    top: 0%;
     padding-top: 90px;
   }
 
-  #mmm {
-    margin: 0%;
-    padding-left: 40px;
+  /* /* ilustraçao + noem da personagem */
+  .alinhamento {
     display: flex;
-    width: 50%;
-    padding-top: 190px;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 10px;
   }
 
-  #titulom {
+  .ilustracaoM {
     margin: 0%;
     display: flex;
-    width: 30%;
-    padding-top: 140px;
-    padding-left: 30px;
+    width: 60%;
+    height: 10%;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+
+  .tituloM {
+    margin: 0%;
+    display: flex;
+    width: 40%;
+    height: 10%;
+    padding-top: 250px;
+    padding-left: 20px;
+    top: 0%;
   }
 
   footer {
     margin-top: 50px;
   }
+
+
 }
 
 /* COMPUTADOR */
