@@ -30,39 +30,44 @@
     position: absolute;
   }
 
-  .buttonsCarla {
+  .buttons {
     position: fixed;
     z-index: 10;
     padding-right: 0;
     text-align: center;
     align-items: end;
     margin-top: auto;
-    display: flex;
+    width: 100%;
+    top: 0%;
+    padding-top: 90px;
   }
 
   /* /* ilustraçao + noem da personagem */
-  */ .alinhamento {
+  .alinhamento {
     display: flex;
     width: 90%;
     justify-content: center;
     margin-bottom: 60px;
-    margin-top: 100px;
+    margin-top: 10px;
   }
 
   .ilustracaoCarla {
     margin: 0%;
-    padding-left: 20px;
     display: flex;
-    width: 50%;
-    padding-top: 30px;
+    width: 60%;
+    height: 10%;
+    padding-top: 100px;
+    padding-left: 20px;
   }
 
   .tituloCarla {
     margin: 0%;
     display: flex;
-    width: 50%;
-    height: 30%;
-    padding-top: 30%;
+    width: 40%;
+    height: 10%;
+    padding-top: 250px;
+    padding-left: 20px;
+    top: 0%;
   }
 
   footer {
