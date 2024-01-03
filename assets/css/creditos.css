@@ -84,24 +84,6 @@ main {
     font-weight: bold;
   }
 
-  /* ICONS */
-  main > img:nth-child(1),
-  main > img:nth-child(3),
-  .nav {
-    display: none;
-  }
-
-  main > img:nth-child(2) {
-    width: 20%;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-
-  main h1 {
-    position: relative;
-    padding-top: 5px;
-  }
-
   /* de cada PERSONAGEM */
   .creditosicon {
     position: absolute;
@@ -132,19 +114,25 @@ main {
     font-size: 0.7em;
     line-height: 150%;
     display: block;
+    background-color: var(--lighter-color);
+    color: var(--secondary-color);
+  }
+  .buttons a:hover{
+    background-color: var(--background-color);
+    color: var(--main-color);
   }
 
   /* LINKS */
   a {
     text-decoration: none;
-    font-size: var(--font-size);
-    background-color: var(--lighter-color);
-    color: var(--secondary-color);
+    background-color: var(--background-color);
+    color: var(--main-color);
     padding: 0px;
     text-align: center;
   }
   a:hover {
     background-color: var(--main-color);
+    color: var(--secondary-color);
   }
 
   h3 > a,
@@ -228,22 +216,17 @@ main {
     font-weight: bold;
   }
 
-  /* ICONS */
-  main > img:nth-child(1),
-  main > img:nth-child(3),
-  .nav {
-    display: none;
+  /* LINKS */
+  a {
+    text-decoration: none;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    padding: 0px;
+    text-align: center;
   }
-
-  main > img:nth-child(2) {
-    width: 20%;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-
-  main h1 {
-    position: relative;
-    padding-top: 5px;
+  a:hover {
+    background-color: var(--lighter-color);
+    color: var(--secondary-color);
   }
 
   /* de cada PERSONAGEM */
@@ -268,6 +251,7 @@ main {
     display: block;
     color: var(--secondary-color);
     font-size: var(--font-size);
+    background-color: var(--lighter-color);
   }
   .buttons a:hover {
     background-color: var(--background-color);
@@ -288,8 +272,9 @@ main {
   footer > a {
     color: var(--secondary-color);
     text-decoration: none;
+    background-color: var(--main-color);
   }
-  footer:hover {
+  footer:hover, footer> a:hover {
     color: var(--main-color);
     background-color: var(--lighter-color);
   }
