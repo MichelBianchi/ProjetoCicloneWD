@@ -76,6 +76,7 @@
     padding-top: 180px;
     padding-left: 40px;
     top: 0%;
+    z-index: 5;
   }
 
   footer {
