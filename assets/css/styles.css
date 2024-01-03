@@ -51,7 +51,7 @@ main {
 
     min-width: 100px;
     max-width: 300px;
-    z-index: 10;
+    z-index: 100;
     text-align: right;
   }
   nav {
