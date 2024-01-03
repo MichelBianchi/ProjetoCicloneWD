@@ -15,10 +15,11 @@
   #ciclone {
     background-color: var(--background-color);
     display: block;
+    display: relative;
   }
 
   .creditosIconAnabela {
-    margin-top: 5px;
+    margin-top: 0px;
     margin-left: 20px;
     width: 150px;
   }
@@ -35,14 +36,15 @@
     background-color: var(--background-color);
   }
 
-  .buttonsAnabela {
+  .buttons {
     position: fixed;
     z-index: 10;
     padding-right: 0;
     text-align: center;
     align-items: end;
-    margin-top: auto;
+    margin-top: -155px;
     display: flex;
+    width: 100%;
   }
 
   /* ilustraçao + noem da personagem */
@@ -51,7 +53,7 @@
     width: 90%;
     justify-content: center;
     margin-bottom: 60px;
-    margin-top: 70px;
+    margin-top: 0px;
   }
 
   .anabelaIlustracao {
@@ -64,7 +66,7 @@
     margin: 0%;
     display: flex;
     width: 40%;
-    padding-top: 210px;
+    padding-top: 190px;
   }
 
   footer {
