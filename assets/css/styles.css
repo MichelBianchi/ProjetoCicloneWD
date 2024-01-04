@@ -11,6 +11,7 @@
   --secondary-color: whitesmoke;
   --lighter-color: #b1649e;
   --font-size: 16px;
+  --font-size2: 12px;
 }
 
 /* SELETOR UNIVERSAL */
@@ -238,7 +239,7 @@ main {
   /* PARÁGRAFOS */
   p {
     display: block;
-    font-size: var(--font-size);
+    font-size: var(--font-size2);
     line-height: 1.3em;
     text-align: start;
     padding-top: 10px;
