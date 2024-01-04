@@ -36,7 +36,7 @@
   }
 
   .buttons {
-    position: fixed;
+    position: absolute;
     z-index: 10;
     padding-right: 0;
     text-align: center;
