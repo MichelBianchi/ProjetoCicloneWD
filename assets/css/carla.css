@@ -14,7 +14,7 @@
     display: block;
   }
 
-  #ciclone > a{
+  #ciclone > a {
     background-color: var(--background-color);
   }
 
@@ -138,6 +138,6 @@
   }
 
   footer {
-    margin-top: 250vh;
+    margin-top: 150vh;
   }
 }
