@@ -104,7 +104,7 @@
     position: relative;
     width: 12%;
     margin-top: -130px;
-    margin-left: 1000px;
+    margin-left: 70%;
     z-index: 10;
   }
 
@@ -131,10 +131,6 @@
 
   .carlaicon {
     opacity: 1;
-  }
-
-  .buttons {
-    margin-top: 90vh;
   }
 
   footer {

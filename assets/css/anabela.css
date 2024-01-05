@@ -104,7 +104,7 @@
     width: 250px;
     margin: 0;
     top: -150px;
-    left: 700px;
+    left: 60%;
   }
 
   .anabelaIlustracao {
@@ -147,7 +147,7 @@
   }
 
   .buttons {
-    margin-top: -2vh;
+    margin-top: -4vh;
   }
 
   footer {

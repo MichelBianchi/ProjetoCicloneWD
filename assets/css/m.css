@@ -89,7 +89,7 @@
     position: absolute;
     width: 200px;
     margin-left: 30px;
-    margin-top: -40px;
+    margin-top: 20px;
   }
 
   .ilustracaoM {
@@ -98,6 +98,7 @@
     width: 32.5%;
     margin-top: 5%;
     margin-left: 300px;
+    padding-bottom: 80px;
   }
 
   .tituloM {

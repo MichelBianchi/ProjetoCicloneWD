@@ -97,8 +97,8 @@
   .ilustracaoBernardo {
     display: block;
     position: relative;
-    width: 600px;
-    margin-top: -570px;
+    width: 40%;
+    margin-top: -450px;
     margin-left: 300px;
   }
 
@@ -106,8 +106,8 @@
     display: block;
     position: relative;
     width: 300px;
-    margin-top: -200px;
-    margin-left: 980px;
+    margin-top: -20%;
+    margin-left: 65%;
   }
 
   main {
@@ -117,7 +117,7 @@
   }
 
   .buttons {
-    margin-top: 5vh;
+    margin-top: 0;
     width: 280px;
   }
 
